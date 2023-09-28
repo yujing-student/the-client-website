@@ -51,14 +51,16 @@ function myFunction() {
 }
 
 //https://codepen.io/shooft/pen/yLGyeag
+// checkbox filter waarin ik de form selecteerd en de addeventlistener daar word de verandering in
+//meegenomen als je op een checkbox klikt dan is dat de event
 document.querySelector("form").addEventListener('change', (event) => {
-    let filter = event.target.value;
+    let filter = event.target.value;//hier is filter gelijk aan event
     let unorderedlist = document.getElementById("myUL");
     const listitems = unorderedlist.getElementsByTagName('li');// de li is verwijzined naar de <li> in html
     // for loop i = 0 en die gaat door alle li's in html tot en met het einde daar staat .lenght ook voor
     for (let i = 0; i < listitems.length; i++) {
         let itemFilter = listitems[i].dataset.filter;// hier word de listitems gefilteerd door de dataset.filter en in html is dat de data-filter die gebruikt word
-        if (itemFilter !== filter) {// als itemfilter niet gelijk is aan filter laat niks zien en filter is die form met de checkdinges
+        if (itemFilter !== filter) {// als itemfilter niet gelijk is aan filter laat niks zien en filter is die form met de checkbox
             listitems[i].style.display = "none";
         }
     }
