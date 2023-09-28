@@ -21,11 +21,11 @@
     <header>
         <div class="image-text">
                 <span class="image">
-                    <img alt="Gebruiker-foto" src="./image/AmberFoto.jpeg">
+                    <a href="index.html"> <img alt="Gebruiker-foto" src="./image/AmberFoto.jpeg"></a>
                 </span>
 
             <div class="text logo-text">
-                <span class="name">Amber v/d Reijden</span>
+                <span class="name">Amber van de Reijden</span>
                 <span class="profession">5 jaar lid</span>
             </div>
         </div>
@@ -39,7 +39,7 @@
                 <li class="search-box">
                     <i class='bx bx-search icon'></i>
                     <label>
-                        <input id="zoeken" placeholder="Zoek..." type="text">
+                        <input id="myInput" onkeyup="myFunction()" placeholder="Zoek..." type="search">
                     </label>
                 </li>
             </ul>
@@ -139,21 +139,36 @@
 <section class="home">
 
     <div class="text"><img alt="logo" src="./image/oba_20.png"></div>
-    <p class="">Welkom op de homepagina aan de zijkant kunt u de gewenste catogorie kiezen</p>
+    <h1 class="h1-title">homepagina</h1>
+    <p class=""> Aan de zijkant kunt u de gewenste catogorie kiezen</p>
+    <!--    https://codepen.io/shooft/pen/yLGyeag code van docent-->
+    <ul id="myUL">
+        <li class="voetbal" data-filter="sport"><a href="#">ajax</a></li>
+        <li class="voetbal" data-filter="sport"><a href="#">psv</a></li>
+        <li class="mode" data-filter="mode"><a href="#">karl lagerfield</a></li>
+        <li class="mode" data-filter="mode"><a href="#">anna wintour</a></li>
+        <li class="booklist" data-filter="kunst"><a href="#">vermeer</a></li>
+        <li class="booklist" data-filter="kunst"><a href="#">mona lisa</a></li>
+        <li class="booklist" data-filter="kunst"><a href="#">Van gogh</a></li>
+
+    </ul>
     <section>
         <button>filterfunctie</button>
         <!--        https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox-->
         <section class="filter">
-            <p>onderwerpen</p>
-            <!-- de section class filter moet pas weergegeven worden nadat op de button geklikt is           -->
-            <input id="onderwerrp-sport" name="onderwerp-sport" type="checkbox" value="sport">
-            <label for="onderwerrp-sport"> sport</label><br>
-            <input id="onderwerp-cultuur" name="onderwerp-cultuur" type="checkbox" value="cultuur">
-            <label for="onderwerp-cultuur">cultuur</label><br>
-            <input id="onderwerp-kunst" name="onderwerp-kunst" type="checkbox" value="kunst">
-            <label for="onderwerp-kunst">kunst</label><br>
-            <input id="onderwerp-romantiek" name="onderwerp-romantiek" type="checkbox" value="romantiek">
-            <label for="onderwerp-romantiek">romantiek</label><br>
+            <form>
+                <p>onderwerpen</p>
+                <!-- de section class filter moet pas weergegeven worden nadat op de button geklikt is           -->
+                <input id="onderwerrp-sport" name="onderwerp-sport" type="checkbox" value="sport">
+                <label for="onderwerrp-sport"> sport</label><br>
+                <input id="onderwerp-cultuur" name="onderwerp-cultuur" type="checkbox" value="cultuur">
+                <label for="onderwerp-cultuur">cultuur</label><br>
+                <input id="onderwerp-kunst" name="onderwerp-kunst" type="checkbox" value="kunst">
+                <label for="onderwerp-kunst">kunst</label><br>
+                <input id="onderwerp-mode" name="onderwerp-mode" type="checkbox" value="mode">
+                <label for="onderwerp-mode">mode</label><br>
+            </form>
+
         </section>
     </section>
 </section>
