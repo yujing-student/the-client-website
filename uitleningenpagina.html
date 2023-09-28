@@ -15,7 +15,6 @@
 </head>
 <body>
 
-
 <nav class="sidebar close">
     <header>
         <div class="image-text">
@@ -38,7 +37,7 @@
                 <li class="search-box">
                     <i class='bx bx-search icon'></i>
                     <label>
-                        <input placeholder="Zoek..." type="text">
+                        <input id="zoekfunctie" placeholder="Zoek..." type="text">
                     </label>
                 </li>
             </ul>
@@ -60,7 +59,7 @@
                 </li>
 
                 <li class="nav-link">
-                    <a href="verlengen.html">
+                    <a href="uitleningen-verlengen.html">
                         <i class='bx bx-bar-chart-alt-2 icon'></i>
                         <span class="text-long nav-text">Uitleningen en verlengen</span>
                     </a>
@@ -104,97 +103,160 @@
         </div>
 
         <div class="bottom-content">
-            <li class="">
-                <a href="inlogpagina.html">
-                    <i class='bx bx-log-out icon'></i>
-                    <span class="text nav-text">Uitloggen</span>
-                </a>
-            </li>
+            <ul>
+                <li class="">
+                    <a href="inlog-uitlog-pagina.html">
+                        <i class='bx bx-log-out icon'></i>
+                        <span class="text nav-text">Uitloggen</span>
+                    </a>
+                </li>
 
-            <li class="mode">
-                <div class="sun-moon">
-                    <i class='bx bx-moon icon moon'></i>
-                    <i class='bx bx-sun icon sun'></i>
-                </div>
-                <span class="mode-text text">Dark mode</span>
+                <li class="mode">
+                    <div class="sun-moon">
+                        <i class='bx bx-moon icon moon'></i>
+                        <i class='bx bx-sun icon sun'></i>
+                    </div>
+                    <span class="mode-text text">Dark mode</span>
 
-                <div class="toggle-switch">
-                    <span class="switch"></span>
-                </div>
-            </li>
+                    <div class="toggle-switch">
+                        <span class="switch"></span>
+                    </div>
+                </li>
+            </ul>
+
 
         </div>
     </div>
 
 </nav>
 <section class="home">
-    <div class="grid-container">
-        <div class="text"><img alt="" src="./image/oba_20.png"></div>
-        <div></div>
-        <h1>resulaten</h1>
-        <ul>unordered list
-            <li>boek1
-                <section>
-                    <aside>
-                        <figure>
-                            <a href="https://zoeken.oba.nl/?q=ajax"><img alt="HTML tutorial"
-                                                                         src="https://cover.biblion.nl/coverlist.dll?doctype=morebutton&bibliotheek=oba&style=0&ppn=416550606&isbn=9789492899101&lid=&aut=&ti=&size=120">
-                            </a>
+    <div class="text"><img alt="logo" src="./image/oba_20.png"></div>
+    <h1>Uitleningen en verlengen</h1>
+    <p>u kunt hier verlengen voor een bepaalder leenperiode van het materiaal deze gaat in op de dag waarop u verlengt.
+        het is niet zinvol om materialen 2x snel achter elkaar te verlengen. onze medewerkers kunnen de material wel
+        voor een langere periode verlenge, bijvoorbeeld als u op
+        vakantie gaat. u kunt niet verlengen als:</p>
+    <ul>
+        <li>itmes die vandaag geleend of verleng zijn</li>
+        <li>items die al 2x verlengd zijn</li>
+        <li>items die de maximale uitleentermijn bereikt hebben (3x de standaardleenperiode) die al in uw bezit zijn
+        </li>
+        <li>items die gereseveerd zijn door iemand anders</li>
+    </ul>
+    <ul>unordered list
+        <li>boek1
+            <section>
+                <aside>
+                    <figure>
+                        <a href="https://zoeken.oba.nl/?q=ajax"><img alt="HTML tutorial"
+                                                                     src="https://cover.biblion.nl/coverlist.dll?doctype=morebutton&bibliotheek=oba&style=0&ppn=416550606&isbn=9789492899101&lid=&aut=&ti=&size=120">
+                        </a>
 
-                        </figure>
-                    </aside>
-                    <p class="content1">dit word content van het boek</p>
-                </section>
-            </li>
-            <li>boek1
-                <section>
-                    <aside>
-                        <figure>
-                            <a href="https://zoeken.oba.nl/?q=ajax"><img alt="HTML tutorial"
-                                                                         src="https://cover.biblion.nl/coverlist.dll?doctype=morebutton&bibliotheek=oba&style=0&ppn=416550606&isbn=9789492899101&lid=&aut=&ti=&size=120">
-                            </a>
+                    </figure>
+                </aside>
+                <p class="content1">dit word content van het boek</p>
+            </section>
+        </li>
+        <li>boek1
+            <section>
+                <aside>
+                    <figure>
+                        <a href="https://zoeken.oba.nl/?q=ajax"><img alt="HTML tutorial"
+                                                                     src="https://cover.biblion.nl/coverlist.dll?doctype=morebutton&bibliotheek=oba&style=0&ppn=416550606&isbn=9789492899101&lid=&aut=&ti=&size=120">
+                        </a>
 
-                        </figure>
-                    </aside>
-                    <p>dit word content van het boek</p>
-                </section>
-            </li>
-            <li>boek1
-                <section>
-                    <aside>
-                        <figure>
-                            <a href="https://zoeken.oba.nl/?q=ajax"><img alt="HTML tutorial"
-                                                                         src="https://cover.biblion.nl/coverlist.dll?doctype=morebutton&bibliotheek=oba&style=0&ppn=416550606&isbn=9789492899101&lid=&aut=&ti=&size=120">
-                            </a>
+                    </figure>
+                </aside>
+                <p>dit word content van het boek</p>
+            </section>
+        </li>
+        <li>boek1
+            <section>
+                <aside>
+                    <figure>
+                        <a href="https://zoeken.oba.nl/?q=ajax"><img alt="HTML tutorial"
+                                                                     src="https://cover.biblion.nl/coverlist.dll?doctype=morebutton&bibliotheek=oba&style=0&ppn=416550606&isbn=9789492899101&lid=&aut=&ti=&size=120">
+                        </a>
 
-                        </figure>
-                    </aside>
-                    <p>dit word content van het boek</p>
-                </section>
-            </li>
-            <li>boek1
-                <section>
-                    <aside>
-                        <figure>
-                            <a href="https://zoeken.oba.nl/?q=ajax"><img alt="HTML tutorial"
-                                                                         src="https://cover.biblion.nl/coverlist.dll?doctype=morebutton&bibliotheek=oba&style=0&ppn=416550606&isbn=9789492899101&lid=&aut=&ti=&size=120">
-                            </a>
+                    </figure>
+                </aside>
+                <p>dit word content van het boek</p>
+            </section>
+        </li>
+        <li>boek1
+            <section>
+                <aside>
+                    <figure>
+                        <a href="https://zoeken.oba.nl/?q=ajax"><img alt="HTML tutorial"
+                                                                     src="https://cover.biblion.nl/coverlist.dll?doctype=morebutton&bibliotheek=oba&style=0&ppn=416550606&isbn=9789492899101&lid=&aut=&ti=&size=120">
+                        </a>
 
-                        </figure>
-                    </aside>
-                    <p>dit word content van het boek</p>
-                </section>
-            </li>
-        </ul>
-        <section class="filter">
-            <input id="vehicle1" name="vehicle1" type="checkbox" value="Bike">
-            <label for="vehicle1"> I have a bike</label><br>
-            <input id="vehicle2" name="vehicle2" type="checkbox" value="Car">
-            <label for="vehicle2"> I have a car</label><br>
-            <input id="vehicle3" name="vehicle3" type="checkbox" value="Boat">
-            <label for="vehicle3"> I have a boat</label><br>
-        </section>
-    </div>
+                    </figure>
+                </aside>
+                <p>dit word content van het boek</p>
+            </section>
+        </li>
+    </ul>
+
 </section>
 </body>
 </html>
+<!--zoekresulaten filter-->
+<!--    <div class="grid-container">-->
+<!--        <h1>resulaten</h1>-->
+<!--        <ul>unordered list-->
+<!--            <li>boek1-->
+<!--                <section>-->
+<!--                    <aside>-->
+<!--                        <figure>-->
+<!--                            <a href="https://zoeken.oba.nl/?q=ajax"><img alt="HTML tutorial"-->
+<!--                                                                         src="https://cover.biblion.nl/coverlist.dll?doctype=morebutton&bibliotheek=oba&style=0&ppn=416550606&isbn=9789492899101&lid=&aut=&ti=&size=120">-->
+<!--                            </a>-->
+
+<!--                        </figure>-->
+<!--                    </aside>-->
+<!--                    <p class="content1">dit word content van het boek</p>-->
+<!--                </section>-->
+<!--            </li>-->
+<!--            <li>boek1-->
+<!--                <section>-->
+<!--                    <aside>-->
+<!--                        <figure>-->
+<!--                            <a href="https://zoeken.oba.nl/?q=ajax"><img alt="HTML tutorial"-->
+<!--                                                                         src="https://cover.biblion.nl/coverlist.dll?doctype=morebutton&bibliotheek=oba&style=0&ppn=416550606&isbn=9789492899101&lid=&aut=&ti=&size=120">-->
+<!--                            </a>-->
+
+<!--                        </figure>-->
+<!--                    </aside>-->
+<!--                    <p>dit word content van het boek</p>-->
+<!--                </section>-->
+<!--            </li>-->
+<!--            <li>boek1-->
+<!--                <section>-->
+<!--                    <aside>-->
+<!--                        <figure>-->
+<!--                            <a href="https://zoeken.oba.nl/?q=ajax"><img alt="HTML tutorial"-->
+<!--                                                                         src="https://cover.biblion.nl/coverlist.dll?doctype=morebutton&bibliotheek=oba&style=0&ppn=416550606&isbn=9789492899101&lid=&aut=&ti=&size=120">-->
+<!--                            </a>-->
+
+<!--                        </figure>-->
+<!--                    </aside>-->
+<!--                    <p>dit word content van het boek</p>-->
+<!--                </section>-->
+<!--            </li>-->
+<!--            <li>boek1-->
+<!--                <section>-->
+<!--                    <aside>-->
+<!--                        <figure>-->
+<!--                            <a href="https://zoeken.oba.nl/?q=ajax"><img alt="HTML tutorial"-->
+<!--                                                                         src="https://cover.biblion.nl/coverlist.dll?doctype=morebutton&bibliotheek=oba&style=0&ppn=416550606&isbn=9789492899101&lid=&aut=&ti=&size=120">-->
+<!--                            </a>-->
+
+<!--                        </figure>-->
+<!--                    </aside>-->
+<!--                    <p>dit word content van het boek</p>-->
+<!--                </section>-->
+<!--            </li>-->
+<!--        </ul>-->
+<!-- -->
+<!--    </div>-->
