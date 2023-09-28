@@ -50,18 +50,18 @@ function myFunction() {
 
 }
 
+//https://codepen.io/shooft/pen/yLGyeag
 document.querySelector("form").addEventListener('change', (event) => {
     let filter = event.target.value;
     let unorderedlist = document.getElementById("myUL");
-    const listbooks = unorderedlist.getElementsByTagName('listbooks');
-
-    for (let i = 0; i < listbooks.length; i++) {
-        let itemFilter = listbooks[i].dataset.filter;
+    const listitems = unorderedlist.getElementsByTagName('li');// de li is verwijzined naar de <li> in html
+    // for loop i = 0 en die gaat door alle li's in html tot en met het einde daar staat .lenght ook voor
+    for (let i = 0; i < listitems.length; i++) {
+        let itemFilter = listitems[i].dataset.filter;
         if (itemFilter !== filter) {
-            // als itemfilter niet
-            listbooks[i].style.display = "none";
+            listitems[i].style.display = "none";
         } else {
-            listbooks[i].style.display = "";
+            listitems[i].style.display = "";
         }
     }
 });
