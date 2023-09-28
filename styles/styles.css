@@ -11,7 +11,7 @@
 
 @font-face {
     font-family: AvenirBlack;
-    src: url(../font/Avenir\ -black.ttf);
+    src: url(../font/Avenir-black.ttf);
 }
 
 /* Custom properties */
@@ -345,6 +345,15 @@ body.dark .switch::before {
 
 }
 
+.content1 {
+    width: 600px;
+}
+
+.filter {
+    width: 600px;
+    right: 100em;
+}
+
 .home {
     position: absolute;
     top: 0;
@@ -363,7 +372,7 @@ body.dark .switch::before {
 }
 
 .sidebar.close ~ .home {
-    left: 78px;
+    left: 178px;
     height: 100vh;
     width: calc(100% - 78px);
 }
