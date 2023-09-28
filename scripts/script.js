@@ -57,11 +57,9 @@ document.querySelector("form").addEventListener('change', (event) => {
     const listitems = unorderedlist.getElementsByTagName('li');// de li is verwijzined naar de <li> in html
     // for loop i = 0 en die gaat door alle li's in html tot en met het einde daar staat .lenght ook voor
     for (let i = 0; i < listitems.length; i++) {
-        let itemFilter = listitems[i].dataset.filter;
-        if (itemFilter !== filter) {
+        let itemFilter = listitems[i].dataset.filter;// hier word de listitems gefilteerd door de dataset.filter en in html is dat de data-filter die gebruikt word
+        if (itemFilter !== filter) {// als itemfilter niet gelijk is aan filter laat niks zien en filter is die form met de checkdinges
             listitems[i].style.display = "none";
-        } else {
-            listitems[i].style.display = "";
         }
     }
 });
