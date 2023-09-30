@@ -19,7 +19,7 @@ briefing naar oba: OBA familie overzichtspagina | squad D
 
 Contactgegevens<br>
 ●Bedrijfsnaam: openbare bibliotheek van Amsterdam<br>
-●	Voor-en achternaam contactpersoon: in portflow bij 1.4.1 staat de volledige debriefing vanege privacy<br>
+●	Voor-en achternaam contactpersoon: in portflow bij 1.4.1 staat de volledige debriefing vanwege privacy<br>
 ●	 Contactgegevens van contactpersoon:<br>
 ●	Datum aanvraag: 25 september 2023<br>
 ●	Datum oplevering: 13 oktober 2023<br>
@@ -73,7 +73,7 @@ Debriefing: OBA familie overzichtspagina | FDND | squad D
 
 Contactgegevens<br>
 •	Bedrijfsnaam: openbare bibliotheek van Amsterdam<br>
-•	Voor-en achternaam contactpersoon: in portflow bij 1.4.1 staat de volledige debriefing vanege privacy<br>
+•	Voor-en achternaam contactpersoon: in portflow bij 1.4.1 staat de volledige debriefing vanwege privacy<br>
 •	Contactgegevens van contactpersoon: <br>
 •	Datum aanvraag: 25 september 2023<br>
 •	Datum oplevering: 13 oktober 2023<br>
