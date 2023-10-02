@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b4566057-6f6f-4cee-9d29-a92c4a484fc5" name="Changes" comment="toevoeging uitleg js code" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="FormatOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="OptimizeOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2VwP5JMh7VsQi73DeQgSZo3Zal4" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;code.cleanup.on.save&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/OneDrive - HvA/periode1/sprint2/eindresultaat/the-client-website&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;rearrange.code.on.save&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;proofread&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\OneDrive - HvA\periode1\sprint2\eindresultaat\the-client-website" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b4566057-6f6f-4cee-9d29-a92c4a484fc5" name="Changes" comment="" />
+      <created>1695743984292</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1695743984292</updated>
+      <workItem from="1695743985377" duration="2662000" />
+      <workItem from="1695819812476" duration="1272000" />
+      <workItem from="1695827417442" duration="1052000" />
+      <workItem from="1695830232537" duration="1978000" />
+      <workItem from="1695888712325" duration="2839000" />
+      <workItem from="1695902378313" duration="16029000" />
+      <workItem from="1695971799613" duration="5558000" />
+      <workItem from="1696001201744" duration="197000" />
+      <workItem from="1696001419899" duration="49000" />
+    </task>
+    <task id="LOCAL-00001" summary="bestanden zijn toegevoegd">
+      <option name="closed" value="true" />
+      <created>1695744721467</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1695744721467</updated>
+    </task>
+    <task id="LOCAL-00002" summary="css moet nog toegevoegd worden en de layout">
+      <option name="closed" value="true" />
+      <created>1695828466218</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1695828466218</updated>
+    </task>
+    <task id="LOCAL-00003" summary="bijna alle pagina's zijn toegevoegd">
+      <option name="closed" value="true" />
+      <created>1695895910607</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1695895910607</updated>
+    </task>
+    <task id="LOCAL-00004" summary="er staat meer inhoud">
+      <option name="closed" value="true" />
+      <created>1695908893463</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1695908893463</updated>
+    </task>
+    <task id="LOCAL-00005" summary="js filter functie werkt">
+      <option name="closed" value="true" />
+      <created>1695917618447</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1695917618447</updated>
+    </task>
+    <task id="LOCAL-00006" summary="verandering naamgeving">
+      <option name="closed" value="true" />
+      <created>1695919649141</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1695919649141</updated>
+    </task>
+    <task id="LOCAL-00007" summary="verandering naamgeving">
+      <option name="closed" value="true" />
+      <created>1695919982366</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1695919982366</updated>
+    </task>
+    <task id="LOCAL-00008" summary="verandering naamgeving">
+      <option name="closed" value="true" />
+      <created>1695920078507</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1695920078507</updated>
+    </task>
+    <task id="LOCAL-00009" summary="toevoeging uitleg js code">
+      <option name="closed" value="true" />
+      <created>1695920500687</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1695920500687</updated>
+    </task>
+    <task id="LOCAL-00010" summary="toevoeging uitleg js code">
+      <option name="closed" value="true" />
+      <created>1695920813475</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1695920813475</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="bestanden zijn toegevoegd" />
+    <MESSAGE value="css moet nog toegevoegd worden en de layout" />
+    <MESSAGE value="bijna alle pagina's zijn toegevoegd" />
+    <MESSAGE value="er staat meer inhoud" />
+    <MESSAGE value="js filter functie werkt" />
+    <MESSAGE value="verandering naamgeving" />
+    <MESSAGE value="toevoeging uitleg js code" />
+    <option name="LAST_COMMIT_MESSAGE" value="toevoeging uitleg js code" />
+  </component>
+</project>
