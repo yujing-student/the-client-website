@@ -446,10 +446,31 @@ body.dark .home .text {
     grid-row: 5/6;
 }
 
-.content1 {
-    width: 600px;
+/*my ul is een id vanwege de filter functie in javascript*/
+#myUL {
+    position: relative;
+    top: 15em;
+    width: 23em;
+    display: grid;
+    grid-template-columns: 20em;
+    grid-template-rows: 5em 5em 5em 5em 5em;
+    background-color: white;
+    border-style: solid;
 }
 
+.filter-function {
+    position: relative;
+    top: 10em;
+    width: 23em;
+    display: grid;
+    grid-template-columns: 20em;
+    grid-template-rows: 5em 10em;
+    background-color: white;
+    border-style: solid;
+}
+
+
+/*door deze code word mijn list anders */
 /*#myUL li a {*/
 /*    border: 1px solid #ddd; !* Add a border to all links *!*/
 /*    margin-top: -1px; !* Prevent double borders *!*/
@@ -463,4 +484,3 @@ body.dark .home .text {
 
 /*#myUL li a:hover:not(.header) {*/
 /*    background-color: #eee; !* Add a hover effect to all links, except for headers *!*/
-/*}*/
