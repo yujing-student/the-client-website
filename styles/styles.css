@@ -219,14 +219,14 @@ body.dark .sidebar header .toggle {
     margin-top: 18px;
 }
 
-.sidebar li.search-box {
+.sidebar .search-box {
     border-radius: 6px;
     background-color: var(--primary-color-light);
     cursor: pointer;
     transition: var(--tran-05);
 }
 
-.sidebar li.search-box input {
+.sidebar .search-box input {
     height: 100%;
     width: 100%;
     outline: none;
@@ -239,7 +239,7 @@ body.dark .sidebar header .toggle {
     transition: var(--tran-05);
 }
 
-.sidebar li a {
+.sidebar a {
     list-style: none;
     height: 100%;
     background-color: transparent;
@@ -352,7 +352,7 @@ body.dark .switch::before {
 .home {
     position: absolute;
     top: 0;
-    left: 350px;
+    left: 25em;
     height: 100vh;
     width: calc(100% - 250px);
     background-color: var(--body-color);
@@ -376,13 +376,30 @@ body.dark .home .text {
     color: var(--text-color);
 }
 
+/*door deze code word mijn list anders dit is de navbar rechts */
+/*#myUL li a {*/
+/*    border: 1px solid #ddd; !* Add a border to all links *!*/
+/*    margin-top: -1px; !* Prevent double borders *!*/
+/*    background-color: #f6f6f6; !* Grey background color *!*/
+/*    padding: 12px; !* Add some padding *!*/
+/*    text-decoration: none; !* Remove default text underline *!*/
+/*    font-size: 18px; !* Increase the font-size *!*/
+/*    color: black; !* Add a black text color *!*/
+/*    display: block; !* Make it into a block element to fill the whole list *!*/
+/*}*/
+
+/*#myUL li a:hover:not(.header) {*/
+/*    background-color: #eee; !* Add a hover effect to all links, except for headers *!*/
+
 /*hier begint mijn code*/
 .h1-title {
     font-size: 5em;
     color: red;
+    /*    hi1 title is een andere html file deposito en niet index*/
 }
 
 
+/*code index html file en op het scherm mobiel*/
 .grid-container-welkom {
     display: grid;
     width: 23em;
@@ -407,43 +424,24 @@ body.dark .home .text {
     grid-row: 3;
 }
 
-.grid-section-list {
+/*dit is de li met depsitos*/
+.grid-section-explain {
     position: relative;
     top: 1em;
     display: grid;
     width: 23em;
     grid-template-columns: 20em;
-    grid-template-rows: 5em 5em 5em 5em 5em;
+    grid-template-rows: 15em;
+    gap: 5em;
     background-color: white;
-    padding: 1em;
-    margin: 0em;
+    padding: 2em;
+
     border-style: solid;
-
 }
 
-.grid-li-first {
-    grid-column: 1/2;
-    grid-row: 1/2;
-}
-
-.grid-li-second {
-    grid-column: 1/2;
-    grid-row: 2/3;
-}
-
-.grid-li-third {
-    grid-column: 1/2;
-    grid-row: 3/4;
-}
-
-.grid-li-fourt {
-    grid-column: 1/2;
-    grid-row: 4/5;
-}
-
-.grid-li-five {
-    grid-column: 1/2;
-    grid-row: 5/6;
+.ul-explanation {
+    display: grid;
+    gap: 1em;
 }
 
 /*my ul is een id vanwege de filter functie in javascript*/
@@ -464,23 +462,77 @@ body.dark .home .text {
     width: 10em;
     display: grid;
     grid-template-columns: 6em;
-    grid-template-rows: 5em 10em;
+    grid-template-rows: 5em 8em;
     background-color: white;
     border-style: solid;
 }
 
+/*vanaf hier beginnen de boeken*/
+.gridbooks {
+    display: grid;
+    grid-template-rows: 20em 20em 20em 20em 20em;
+    grid-template-columns: 15em;
+    position: relative;
+    top: 7em;
+    gap: 1em;
+}
 
-/*door deze code word mijn list anders */
-/*#myUL li a {*/
-/*    border: 1px solid #ddd; !* Add a border to all links *!*/
-/*    margin-top: -1px; !* Prevent double borders *!*/
-/*    background-color: #f6f6f6; !* Grey background color *!*/
-/*    padding: 12px; !* Add some padding *!*/
-/*    text-decoration: none; !* Remove default text underline *!*/
-/*    font-size: 18px; !* Increase the font-size *!*/
-/*    color: black; !* Add a black text color *!*/
-/*    display: block; !* Make it into a block element to fill the whole list *!*/
-/*}*/
+.gridbookfrst {
+    display: grid;
+    grid-row: 1;
+    grid-column: 1;
+    background-color: white;
+    /*    positionneren*/
 
-/*#myUL li a:hover:not(.header) {*/
-/*    background-color: #eee; !* Add a hover effect to all links, except for headers *!*/
+
+}
+
+.gridbooksecond {
+    display: grid;
+    grid-row: 2;
+    grid-column: 1;
+    background-color: white;
+
+}
+
+.gridbookthird {
+    display: grid;
+    grid-row: 3;
+    grid-column: 1;
+    background-color: white;
+}
+
+.gridbookfourth {
+    display: grid;
+    grid-row: 4;
+    grid-column: 1;
+    background-color: white;
+}
+
+.gridbookfive {
+    display: grid;
+    grid-row: 5;
+    grid-column: 1;
+    background-color: white;
+}
+
+/*opmaak en positioneren van de tiel content en foto*/
+.title-book, .content-book-under-name-book {
+    display: block;
+    position: relative;
+    right: -1em;
+
+}
+
+.books-image {
+    display: block;
+    position: relative;
+    right: 1em;
+}
+
+/*vanaf hier begint ipad formaat en weer van boven naar beneden gaan*/
+@media (min-device-width: 768px)  and (max-device-width: 1024px)
+and (-webkit-min-device-pixel-ratio: 1) {
+
+
+}

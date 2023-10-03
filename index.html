@@ -40,6 +40,7 @@
                     <i class='bx bx-search icon'></i>
                     <label>
                         <input id="myInput" onkeyup="myFunction()" placeholder="Zoek..." type="search">
+                        <!--                        <button type="submit"></button>-->
                     </label>
                 </li>
             </ul>
@@ -149,25 +150,23 @@
             een boek of dvd verder kunt u uw reserveringen bekijken en uw uitlengeschiedenis zien daarnaast kunt u
             ook:</p>
     </div>
-    <section class="grid-section-list">
+    <section class="grid-section-explain">
+        <ul class="ul-explanation">
+            <li class="">openstaande bedragen via IDEAL zien</li>
+            <li class="">via de optie deposito's een tegoed op uw pas zetten waarmee u toekomstige boetes,leengeld,etc
+                kunt afrekenen
+            </li>
+            <li class="">uw persoonlijke gegevens aanpassen</li>
+            <li class="">een alias keizen</li>
+            <li class="">andere leners aan uw account koppeln</li>
+        </ul>
 
-        <section class="grid-li-first">-openstaande bedragen via IDEAL zien</section>
-        <section class="grid-li-second">- via de optie deposito's een tegoed op uw pas zetten waarmee u toekomstige
-            boetes,leengeld,etc kunt
-            afrekenen
-        </section>
-        <section class="grid-li-third">
-            <bold>-</bold>
-            uw persoonlijke gegevens aanpassen
-        </section>
-        <section class="grid-li-fourt">-een alias keizen</section>
-        <section class="grid-li-five">-andere leners aan uw account koppeln</section>
     </section>
 
 
     <!--    https://codepen.io/shooft/pen/yLGyeag code van docent-->
     <section class="filter-function">
-        <button>filterfunctie</button>
+        <!--        <button>filterfunctie</button>-->
         <!--    https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox-->
         <section class="filter">
             <!--            hamburger menue voor mobiel als coolblue variant niet lukt-->
@@ -186,7 +185,7 @@
                 <input id="onderwerp-mode" name="onderwerp-mode" type="checkbox" value="mode">
                 <label for="onderwerp-mode">mode</label><br>
                 <div class="form-example">
-                    <input type="submit" value="Subscribe!"/>
+                    <!--                    <input type="submit" value="Subscribe!"/>-->
                 </div>
                 <div class="form-example">
                     <input type="reset" value="reset!"/>
@@ -196,45 +195,57 @@
 
         </section>
     </section>
-    <div class="">
-        <section>
-            <img src="./image/book-1.png" width="200em" height="200em" alt="dit is boek1" data-filter="sport">
-            <a href="#">ajax</a>
-            </img>
+    <div class="gridbooks">
+        <!--        hier moet je een grid indeling nog bedenken hoe je dat wilt gaan doen-->
+        <section class="gridbookfrst">
+            <img alt="dit is boek1" class="books-image" data-filter="sport" height="200em"
+                 src="./image/book-1.png" width="200em">
+            <section class="title-book"><a href="#">ajax</a></section>
+            <p class="content-book-under-name-book"> ajax is een voetbalclub uit amsterdam</p>
+            <button>voeg toe aan leeslijst</button>
+
         </section>
-        <section>
-            <img src="./image/book-2.png" width="200em" height="200em" alt="dit is boek2" data-filter="sport">
-            <a href="#">psv</a>
-            </img>
+        <section class="gridbooksecond">
+            <img alt="dit is boek2" class="books-image" data-filter="sport" height="200em" src="./image/book-2.png"
+                 width="200em">
+            <section class="title-book"><a href="#">psv</a></section>
+            <p class="content-book-under-name-book"> psv is een voetbalclub uit eindhoven</p>
+
         </section>
-        <section>
-            <img src="./image/book-3.png" width="200em" height="200em" alt="dit is boek3" data-filter="sport">
-            <a href="#">karl lagerfied</a>
-            </img>
+        <section class="gridbookthird">
+            <img alt="dit is boek3" class="books-image" data-filter="sport" height="200em" src="./image/book-3.png"
+                 width="200em">
+            <section class="title-book"><a href="#">karl lagerfied</a></section>
+            <p class="content-book-under-name-book">karl lagerfield is een modeontwerper</p>
+
         </section>
-        <section>
-            <img src="./image/book-4.png" width="200em" height="200em" alt="dit is boek4" data-filter="mode">
-            <a href="#">anna wintour</a>
-            </img>
+        <section class="gridbookfourth">
+            <img alt="dit is boek4" class="books-image" data-filter="mode" height="200em" src="./image/book-4.png"
+                 width="200em">
+            <section class="title-book"><a href="#">the devils wears prada</a></section>
+            <p class="content-book-under-name-book">anna wintour is een modeontwerper en dit boek gaat over 1 van de
+                ervaringen van haar asistenten</p>
+
         </section>
-        <section>
-            <img src="./image/book-5.png" width="200em" height="200em" alt="dit is boek4" data-filter="kunst">
-            <a href="#">van gogh</a>
-            </img>
+        <section class="gridbookfive">
+            <img alt="dit is boek5" class="books-image" data-filter="kunst" height="200em" src="./image/book-5.png"
+                 width="200em">
+            <section class="title-book"><a href="#">van gogh</a></section>
+            <p class="content-book-under-name-book">van gogh is een kunstunaar</p>
         </section>
     </div>
-<!--    deze filter funcite werkt zonder dat je op een knop hoeft te drukken-->
-<!--    <ul id="myUL">-->
+    <!--    deze filter funcite werkt zonder dat je op een knop hoeft te drukken-->
+    <ul id="myUL">
 
-<!--        <li class="voetbal" data-filter="sport"><a href="#">ajax</a></li>-->
-<!--        <li class="voetbal" data-filter="sport"><a href="#">psv</a></li>-->
-<!--        <li class="mode" data-filter="mode"><a href="#">karl lagerfield</a></li>-->
-<!--        <li class="mode" data-filter="mode"><a href="#">anna wintour</a></li>-->
-<!--        <li class="booklist" data-filter="kunst"><a href="#">vermeer</a></li>-->
-<!--        <li class="booklist" data-filter="kunst"><a href="#">mona lisa</a></li>-->
-<!--        <li class="booklist" data-filter="kunst"><a href="#">Van gogh</a></li>-->
+        <li class="voetbal" data-filter="sport"><a href="#">ajax</a></li>
+        <li class="voetbal" data-filter="sport"><a href="#">psv</a></li>
+        <li class="mode" data-filter="mode"><a href="#">karl lagerfield</a></li>
+        <li class="mode" data-filter="mode"><a href="#">anna wintour</a></li>
+        <li class="booklist" data-filter="kunst"><a href="#">vermeer</a></li>
+        <li class="booklist" data-filter="kunst"><a href="#">mona lisa</a></li>
+        <li class="booklist" data-filter="kunst"><a href="#">Van gogh</a></li>
 
-<!--    </ul>-->
+    </ul>
 
 </section>
 </body>
