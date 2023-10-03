@@ -395,6 +395,7 @@ body.dark .home .text {
 
 
 /*code index html file en op het scherm mobiel*/
+/*TODO maken scrollbaar*/
 .grid-container-welkom {
     display: grid;
     width: 23em;
@@ -452,6 +453,8 @@ body.dark .home .text {
     /*border-style: solid;*/
 }
 
+/*todo dit moet nog inklapbaar worden*/
+/*todo dit lezen https://www.w3schools.com/howto/howto_js_collapsible.asp zoeist misschien*/
 .filter-function {
     position: relative;
     top: 3em;
