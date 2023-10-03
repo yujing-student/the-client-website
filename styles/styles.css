@@ -344,11 +344,6 @@ body.dark .switch::before {
     left: 20px;
 }
 
-.filter {
-    width: 600px;
-    right: 100em;
-}
-
 .home {
     position: absolute;
     top: 0;
@@ -404,7 +399,7 @@ body.dark .home .text {
     display: grid;
     width: 23em;
     grid-template-columns: 20em;
-    grid-template-rows: 5em 5em 10em;
+    grid-template-rows: 4em 4em 9em;
     background-color: white;
     padding: 2em;
 }
@@ -436,12 +431,13 @@ body.dark .home .text {
     background-color: white;
     padding: 2em;
 
-    border-style: solid;
+    /*border-style: solid;*/
 }
 
 .ul-explanation {
     display: grid;
     gap: 1em;
+    width: 23em;
 }
 
 /*my ul is een id vanwege de filter functie in javascript*/
@@ -453,18 +449,16 @@ body.dark .home .text {
     grid-template-columns: 20em;
     grid-template-rows: 5em 5em 5em 5em 5em;
     background-color: white;
-    border-style: solid;
+    /*border-style: solid;*/
 }
 
 .filter-function {
     position: relative;
     top: 3em;
     width: 10em;
-    display: grid;
-    grid-template-columns: 6em;
-    grid-template-rows: 5em 8em;
+    display: flex;
     background-color: white;
-    border-style: solid;
+    /*border-style: solid;*/
 }
 
 /*vanaf hier beginnen de boeken*/
@@ -533,6 +527,65 @@ body.dark .home .text {
 /*vanaf hier begint ipad formaat en weer van boven naar beneden gaan*/
 @media (min-device-width: 768px)  and (max-device-width: 1024px)
 and (-webkit-min-device-pixel-ratio: 1) {
+    .grid-container-welkom {
+        width: 35em;
+        grid-template-rows: 5em 5em 6em;
+    }
 
+    .grid-content-paragraph {
+        grid-column: 1/3;
+    }
+
+    .ul-explanation {
+        width: 35em;
+    }
+
+    .grid-section-explain {
+        width: 35em;
+    }
+
+    .filter-function {
+        top: 6.4em;
+
+        left: 25em;
+    }
+
+    .gridbooks {
+        top: -2em;
+
+    }
+
+}
+
+@media screen and (min-device-width: 1025px) and (-webkit-min-device-pixel-ratio: 1) {
+    .grid-container-welkom {
+        width: 60em;
+    }
+
+    .grid-content-paragraph {
+        grid-column: 1/4;
+    }
+
+    .grid-section-explain {
+        width: 34em;
+    }
+
+    .ul-explanation {
+        width: 35em;
+    }
+
+    .filter-function {
+        left: 25em;
+
+        position: relative;
+        top: 6.4em;
+        width: 10em;
+        display: flex;
+
+    }
+
+    .gridbooks {
+        top: -2em;
+    }
 
 }

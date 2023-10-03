@@ -26,7 +26,7 @@ modeSwitch.addEventListener("click", () => {
 });
 
 //mijn code
-// zoekfunctie op naam werkt niet geheel w3schools als je wat intypt krijg je resultaat
+// zoekfunctie op naam werkt niet geheel w3schools als je wat intypt krijg je resultaat bij de lijst onderaan
 function myFunction() {
     // Declare variables
     let input, filter, ul, li, a, i, txtValue;
