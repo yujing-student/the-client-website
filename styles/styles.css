@@ -468,7 +468,7 @@ body.dark .home .text {
 .gridbooks {
     display: grid;
     grid-template-rows: 20em 20em 20em 20em 20em;
-    grid-template-columns: 15em;
+    grid-template-columns: 22em;
     position: relative;
     top: 7em;
     gap: 1em;
@@ -509,7 +509,7 @@ body.dark .home .text {
 .gridbookfive {
     display: grid;
     grid-row: 5;
-    grid-column: 1;
+    grid-column: 1/2;
     background-color: white;
 }
 
@@ -518,6 +518,7 @@ body.dark .home .text {
     display: block;
     position: relative;
     right: -1em;
+    width: 20em;
 
 }
 
@@ -562,7 +563,8 @@ and (-webkit-min-device-pixel-ratio: 1) {
 
 @media screen and (min-device-width: 1025px) and (-webkit-min-device-pixel-ratio: 1) {
     .grid-container-welkom {
-        width: 60em;
+        width: 40em;
+        grid-template-rows: 4em 4em 4em;
     }
 
     .grid-content-paragraph {
