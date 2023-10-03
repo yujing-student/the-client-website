@@ -460,10 +460,10 @@ body.dark .home .text {
 
 .filter-function {
     position: relative;
-    top: 10em;
-    width: 23em;
+    top: 3em;
+    width: 10em;
     display: grid;
-    grid-template-columns: 20em;
+    grid-template-columns: 6em;
     grid-template-rows: 5em 10em;
     background-color: white;
     border-style: solid;
