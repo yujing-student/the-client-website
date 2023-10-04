@@ -1,17 +1,17 @@
 /* Fonts being used by the oba */
 @font-face {
     font-family: AvenirRoman;
-    src: url(../font/Avenir-roman.ttf);
+    src: url(../font/Avenir-Roman.ttf);
 }
 
 @font-face {
     font-family: AvenirMedium;
-    src: url(../font/Avenir-medium.ttf);
+    src: url(../font/Avenir-Medium.ttf);
 }
 
 @font-face {
     font-family: AvenirBlack;
-    src: url(../font/Avenir-black.ttf);
+    src: url(../font/Avenir-Black.ttf);
 }
 
 /* Custom properties */
@@ -395,216 +395,428 @@ body.dark .home .text {
 
 
 /*code index html file en op het scherm mobiel*/
+@media (min-device-width: 1px)  and (max-device-width: 768px) {
+    .grid-container-welkom {
+        display: grid;
+        width: 23em;
+        grid-template-columns: 20em;
+        grid-template-rows: 4em 4em 12em;
+        background-color: white;
+        padding: 2em;
+    }
 
-/*TODO maken scrollbaar*/
-.grid-container-welkom {
-    display: grid;
-    width: 23em;
-    grid-template-columns: 20em;
-    grid-template-rows: 4em 4em 9em;
-    background-color: white;
-    padding: 2em;
+    .grid-h1-title {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .grid-name {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .grid-content-paragraph {
+        grid-column: 1/2;
+        grid-row: 3;
+        line-height: 2em;
+    }
+
+    /*dit is de li met depsitos*/
+    .grid-section-explain {
+        position: relative;
+        top: 1em;
+        display: grid;
+        width: 23em;
+        grid-template-columns: 20em;
+        grid-template-rows: 23em;
+        gap: 13em;
+        background-color: white;
+        padding: 2em;
+
+        /*border-style: solid;*/
+    }
+
+    .ul-explanation {
+        display: grid;
+        gap: 1em;
+        width: 20em;
+        line-height: 2em;
+    }
+
+    /*my ul is een id vanwege de filter functie in javascript*/
+    #myUL {
+        position: relative;
+        top: 15em;
+        width: 23em;
+        display: grid;
+        grid-template-columns: 20em;
+        grid-template-rows: 5em 5em 5em 5em 5em;
+        background-color: white;
+        /*border-style: solid;*/
+    }
+
+    /*todo dit moet nog inklapbaar worden*/
+    /*todo dit lezen https://www.w3schools.com/howto/howto_js_collapsible.asp zoeist misschien*/
+    .filter-function {
+        position: relative;
+        top: 3em;
+        width: 10em;
+        display: flex;
+        background-color: white;
+        /*border-style: solid;*/
+    }
+
+    /*vanaf hier beginnen de boeken*/
+    .gridbooks {
+        top: 6em;
+        display: grid;
+        grid-template-rows: 19em 19em 18em 19em 19em;
+        grid-template-columns: 14em 15em;
+        position: relative;
+        gap: 2em;
+    }
+
+    .firstbook {
+        display: grid;
+        grid-row: 1;
+        grid-column: 1;
+        background-color: white;
+        /*    positionneren*/
+
+
+    }
+
+    .secondbook {
+        display: grid;
+        grid-row: 2;
+        grid-column: 1;
+        background-color: white;
+
+    }
+
+    .thirdbook {
+        display: grid;
+        grid-row: 3;
+        grid-column: 1;
+        background-color: white;
+    }
+
+    .fourthbook {
+        display: grid;
+        grid-row: 4;
+        grid-column: 1;
+        background-color: white;
+    }
+
+    .fivebook {
+        display: grid;
+        grid-row: 5;
+        grid-column: 1/2;
+        background-color: white;
+    }
+
+    /*opmaak en positioneren van de tiel content en foto*/
+    .sectiontitle-book {
+        display: block;
+        position: relative;
+        right: 0em;
+        text-align: center;
+        width: 15em;
+
+    }
+
+    .books-image {
+        display: block;
+        position: relative;
+        right: -1em;
+
+    }
+
+    /*content-book-under-name-book dit is voor content maar ga ik niet gebruiken*/
+    .booktitle {
+        display: block;
+        position: relative;
+        width: 6em;
+        left: 1.8em;
+        color: #000000;
+        font-size: 1.5em;
+        justify-content: center;
+        /*background-color: #242526;*/
+    }
+
+
 }
 
-.grid-h1-title {
-    grid-column: 1;
-    grid-row: 1;
-}
-
-.grid-name {
-    /*grid-column: 2;*/
-    grid-row: 2;
-}
-
-.grid-content-paragraph {
-    grid-column: 1/2;
-    grid-row: 3;
-}
-
-/*dit is de li met depsitos*/
-.grid-section-explain {
-    position: relative;
-    top: 1em;
-    display: grid;
-    width: 23em;
-    grid-template-columns: 20em;
-    grid-template-rows: 15em;
-    gap: 5em;
-    background-color: white;
-    padding: 2em;
-
-    /*border-style: solid;*/
-}
-
-.ul-explanation {
-    display: grid;
-    gap: 1em;
-    width: 23em;
-}
-
-/*my ul is een id vanwege de filter functie in javascript*/
-#myUL {
-    position: relative;
-    top: 15em;
-    width: 23em;
-    display: grid;
-    grid-template-columns: 20em;
-    grid-template-rows: 5em 5em 5em 5em 5em;
-    background-color: white;
-    /*border-style: solid;*/
-}
-
-/*todo dit moet nog inklapbaar worden*/
-/*todo dit lezen https://www.w3schools.com/howto/howto_js_collapsible.asp zoeist misschien*/
-.filter-function {
-    position: relative;
-    top: 3em;
-    width: 10em;
-    display: flex;
-    background-color: white;
-    /*border-style: solid;*/
-}
-
-/*vanaf hier beginnen de boeken*/
-.gridbooks {
-    display: grid;
-    grid-template-rows: 20em 20em 20em 20em 20em;
-    grid-template-columns: 22em;
-    position: relative;
-    top: 7em;
-    gap: 1em;
-}
-
-.gridbookfrst {
-    display: grid;
-    grid-row: 1;
-    grid-column: 1;
-    background-color: white;
-    /*    positionneren*/
-
-
-}
-
-.gridbooksecond {
-    display: grid;
-    grid-row: 2;
-    grid-column: 1;
-    background-color: white;
-
-}
-
-.gridbookthird {
-    display: grid;
-    grid-row: 3;
-    grid-column: 1;
-    background-color: white;
-}
-
-.gridbookfourth {
-    display: grid;
-    grid-row: 4;
-    grid-column: 1;
-    background-color: white;
-}
-
-.gridbookfive {
-    display: grid;
-    grid-row: 5;
-    grid-column: 1/2;
-    background-color: white;
-}
-
-/*opmaak en positioneren van de tiel content en foto*/
-.title-book, .content-book-under-name-book {
-    display: block;
-    position: relative;
-    right: -1em;
-    width: 20em;
-
-}
-
-.books-image {
-    display: block;
-    position: relative;
-    right: 1em;
-}
+/*TODO in een andere versie all deze code kopieren en plakken met 3 media queries mobiel ipad tablet*/
 
 /*vanaf hier begint ipad formaat en weer van boven naar beneden gaan*/
 @media (min-device-width: 768px)  and (max-device-width: 1024px)
 and (-webkit-min-device-pixel-ratio: 1) {
     .grid-container-welkom {
+        display: grid;
+        grid-template-columns: 20em;
+        background-color: white;
+        padding: 2em;
+
         width: 35em;
         grid-template-rows: 5em 5em 6em;
     }
 
+    .grid-name {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
     .grid-content-paragraph {
         grid-column: 1/3;
+        line-height: 2em;
     }
 
     .ul-explanation {
-        width: 35em;
+        width: 32em;
+        display: grid;
+        gap: 1em;
+
     }
 
     .grid-section-explain {
         width: 35em;
+        position: relative;
+        top: 1em;
+        display: grid;
+
+        grid-template-columns: 20em;
+        grid-template-rows: 23em;
+        gap: 2.5em;
+        background-color: white;
+        padding: 2em;
     }
 
     .filter-function {
         top: 6.4em;
+        left: 35em;
 
-        left: 25em;
+
+        position: relative;
+
+        width: 10em;
+        display: flex;
+        background-color: white;
     }
 
     .gridbooks {
         top: -2em;
+        display: grid;
+        grid-template-rows: 19em 19em 18em 19em 19em;
+        grid-template-columns: 14em 15em;
+        position: relative;
+        gap: 2em;
 
+    }
+
+    .firstbook {
+        display: grid;
+        grid-row: 1;
+        grid-column: 1;
+        background-color: white;
+        /*    positionneren*/
+
+
+    }
+
+    .secondbook {
+        display: grid;
+        grid-row: 1;
+        grid-column: 2;
+        background-color: white;
+
+    }
+
+    .thirdbook {
+        display: grid;
+        grid-row: 2;
+        grid-column: 1;
+        background-color: white;
+    }
+
+    .fourthbook {
+        display: grid;
+        grid-row: 2;
+        grid-column: 2;
+        background-color: white;
+    }
+
+    .fivebook {
+        display: grid;
+        grid-row: 3;
+        grid-column: 1/2;
+        background-color: white;
+    }
+
+    .books-image {
+        display: block;
+        position: relative;
+        right: -1em;
+
+    }
+
+    .sectiontitle-book {
+        display: block;
+        position: relative;
+        right: 0em;
+        text-align: center;
+        width: 15em;
+
+    }
+
+    /*content-book-under-name-book dit is voor content maar ga ik niet gebruiken*/
+    .booktitle {
+        display: block;
+        position: relative;
+        width: 6em;
+        left: 1.8em;
+        color: #000000;
+        font-size: 1.5em;
+        justify-content: center;
+        /*background-color: #242526;*/
     }
 
 }
 
-@media screen and (min-device-width: 1025px) and (-webkit-min-device-pixel-ratio: 1) {
+/*vanaf hier begint laptop deskopt of nog groter formaat*/
+@media (min-device-width: 1025px) {
     .grid-container-welkom {
-        width: 40em;
-        grid-template-rows: 4em 4em 4em;
+        width: 34em;
+        grid-template-rows: 4em 4em 9em;
         display: grid;
-        grid-template-columns: 20em;
+        grid-template-columns: 14em 14em;
         background-color: white;
         padding: 2em;
 
 
     }
 
+    .grid-name {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
     .grid-content-paragraph {
         grid-column: 1/4;
+        line-height: 2em;
     }
 
     .grid-section-explain {
         width: 34em;
+        position: relative;
+        top: 1em;
+        display: grid;
+
+        grid-template-columns: 20em;
+        grid-template-rows: 15em;
+        gap: 5em;
+        background-color: white;
+        padding: 2em;
     }
 
     .ul-explanation {
-        width: 35em;
+        width: 32em;
+
+        display: grid;
+        gap: 1em;
+
+    }
+
+    .searchbookbox {
+
     }
 
     .filter-function {
-        left: 25em;
-
+        left: 0em;
         position: relative;
-        top: 6.4em;
+        top: 1.4em;
         width: 10em;
         display: flex;
+        background-color: white;
 
     }
 
     .gridbooks {
-        top: -2em;
+        top: 3em;
         display: grid;
-        grid-template-rows: 20em 20em 20em 20em 20em;
-        grid-template-columns: 22em;
+        grid-template-rows: 19em 19em 18em 19em 19em;
+        grid-template-columns: 14em 14em 14em;
         position: relative;
-        width: 40em;
+        gap: 2em;
 
-        gap: 1em;
     }
+
+    .firstbook {
+        display: grid;
+        grid-row: 1;
+        grid-column: 1;
+        background-color: white;
+        /*    positionneren*/
+
+
+    }
+
+    .secondbook {
+        display: grid;
+        grid-row: 1;
+        grid-column: 2;
+        background-color: white;
+
+    }
+
+    .thirdbook {
+        display: grid;
+        grid-row: 1;
+        grid-column: 3;
+        background-color: white;
+    }
+
+    .fourthbook {
+        display: grid;
+        grid-row: 2;
+        grid-column: 2;
+        background-color: white;
+    }
+
+    .fivebook {
+        display: grid;
+        grid-row: 3;
+        grid-column: 1/2;
+        background-color: white;
+    }
+
+    .books-image {
+        display: block;
+        position: relative;
+        right: -1em;
+
+    }
+
+    .sectiontitle-book {
+        display: block;
+        position: relative;
+        right: 0em;
+        text-align: center;
+        width: 15em;
+
+    }
+
+    /*content-book-under-name-book dit is voor content maar ga ik niet gebruiken*/
+    .booktitle {
+        display: block;
+        position: relative;
+        width: 6em;
+        left: 1.8em;
+        color: #000000;
+        font-size: 1.5em;
+        justify-content: center;
+        /*background-color: #242526;*/
+    }
+
 
 }

@@ -6,14 +6,14 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
     <!-- Link to CSS -->
-    <link href="./styles/styles.css" rel="stylesheet" type="text/css">
+    <link href="../styles/styles.css" rel="stylesheet">
 
     <!-- Link to boxicons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
     <!-- Link to JavaScript script -->
-    <script defer src="./scripts/script.js"></script>
-    <title>indexpagina</title>
+    <script defer src="../scripts/script.js"></script>
+    <title>uitleningen en verlengen</title>
 </head>
 <body>
 
@@ -21,7 +21,7 @@
     <header>
         <div class="image-text">
             <div class="image">
-                <a href="index.html"> <img alt="Gebruiker-foto" src="./image/AmberFoto.jpeg"></a>
+                <a href="../index/index.html"> <img alt="Gebruiker-foto" src="../image/AmberFoto.jpeg"></a>
             </div>
 
             <div class="text logo-text">
@@ -40,7 +40,6 @@
                     <i class='bx bx-search icon'></i>
                     <label>
                         <input id="myInput" onkeyup="myFunction()" placeholder="Zoek..." type="search">
-                        <!--                        <button type="submit"></button>-->
                     </label>
                 </li>
             </ul>
@@ -48,14 +47,14 @@
 
             <ul class="menu-links">
                 <li class="nav-link">
-                    <a href="welkompagina.html">
+                    <a href="../overige-pagina's/welkompagina.html">
                         <i class='bx bx-home icon'></i>
                         <span class="text nav-text">Welkom</span>
                     </a>
                 </li>
 
                 <li class="nav-link">
-                    <a href="leeslijst.html">
+                    <a href="../overige-pagina's/leeslijst.html">
                         <i class='bx bx-list-ul icon'></i>
                         <span class="text nav-text">Leeslijst</span>
                     </a>
@@ -69,35 +68,35 @@
                 </li>
 
                 <li class="nav-link">
-                    <a href="uitleengeschiedenis.html">
+                    <a href="../overige-pagina's/uitleengeschiedenis.html">
                         <i class='bx bx-bell icon'></i>
                         <span class="text nav-text">Uitleengeschiedenis</span>
                     </a>
                 </li>
 
                 <li class="nav-link">
-                    <a href="betaalgeschiedenis.html">
+                    <a href="../overige-pagina's/betaalgeschiedenis.html">
                         <i class='bx bx-pie-chart-alt icon'></i>
                         <span class="text nav-text">Betaalgeschiedenis</span>
                     </a>
                 </li>
 
                 <li class="nav-link">
-                    <a href="reserveringen.html">
+                    <a href="../overige-pagina's/reserveringen.html">
                         <i class='bx bx-heart icon'></i>
                         <span class="text nav-text">Reserveringen</span>
                     </a>
                 </li>
 
                 <li class="nav-link">
-                    <a href="desposito.html">
+                    <a href="../overige-pagina's/desposito.html">
                         <i class='bx bx-wallet icon'></i>
                         <span class="text nav-text">Desposito's</span>
                     </a>
                 </li>
 
                 <li class="nav-link">
-                    <a href="tellerstand.html">
+                    <a href="../overige-pagina's/tellerstand.html">
                         <i class='bx bx-wallet icon'></i>
                         <span class="text nav-text">Tellerstand abonnement</span>
                     </a>
@@ -108,7 +107,7 @@
         <div class="bottom-content">
             <ul>
                 <li class="">
-                    <a href="inlog-uitlog-pagina.html">
+                    <a href="../overige-pagina's/inlog-uitlog-pagina.html">
                         <i class='bx bx-log-out icon'></i>
                         <span class="text nav-text">Uitloggen</span>
                     </a>
@@ -132,39 +131,11 @@
     </div>
 
 </nav>
-<!--in deze section moet de content komen te staant-->
-<!--https://zoeken.oba.nl/?q=ajax-->
-<!--https://github.com/ju5tu5/layout-example-->
-<!--deze layout gebruiken-->
-
 <section class="home">
-    <!--TODO maken scrollbaar-->
-    <div class="text"><img alt="logo" src="./image/oba_20.png"></div>
-    <div class="grid-container-welkom">
-        <h1 class="grid-h1-title">homepagina</h1>
-        <h2 class="grid-name">welkom naam</h2>
-        <p class="grid-content-paragraph">welkom op uw persoonlijke pagina van de website van de OBA.
-            op deze pagina
-            kunt u uw materialen verlengen
-            zoals
-            een boek of dvd verder kunt u uw reserveringen bekijken en uw uitlengeschiedenis zien daarnaast kunt u
-            ook:</p>
-    </div>
-    <section class="grid-section-explain">
-        <ul class="ul-explanation">
-            <li class="">openstaande bedragen via IDEAL zien</li>
-            <li class="">via de optie deposito's een tegoed op uw pas zetten waarmee u toekomstige boetes,leengeld,etc
-                kunt afrekenen
-            </li>
-            <li class="">uw persoonlijke gegevens aanpassen</li>
-            <li class="">een alias keizen</li>
-            <li class="">andere leners aan uw account koppeln</li>
-        </ul>
 
-    </section>
+    <div class="text"><img alt="" src="../image/oba_20.png"></div>
+    <h1>hier vind u een overzicht met uw uitleningen en welke u kunt verengen</h1>
 
-
-    <!--    https://codepen.io/shooft/pen/yLGyeag code van docent-->
     <section class="filter-function">
         <!--        <button>filterfunctie</button>-->
         <!--    https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox-->
@@ -199,28 +170,28 @@
         <!--        hier moet je een grid indeling nog bedenken hoe je dat wilt gaan doen-->
         <section class="gridbookfrst">
             <img alt="dit is boek1" class="books-image" data-filter="sport" height="200em"
-                 src="./image/book-1.png" width="200em">
+                 src="../image/book-1.png" width="200em">
             <section class="title-book"><a href="#">ajax</a></section>
             <p class="content-book-under-name-book"> ajax is een voetbalclub uit amsterdam</p>
             <button>voeg toe aan leeslijst</button>
 
         </section>
         <section class="gridbooksecond">
-            <img alt="dit is boek2" class="books-image" data-filter="sport" height="200em" src="./image/book-2.png"
+            <img alt="dit is boek2" class="books-image" data-filter="sport" height="200em" src="../image/book-2.png"
                  width="200em">
             <section class="title-book"><a href="#">psv</a></section>
             <p class="content-book-under-name-book"> psv is een voetbalclub uit eindhoven</p>
 
         </section>
         <section class="gridbookthird">
-            <img alt="dit is boek3" class="books-image" data-filter="sport" height="200em" src="./image/book-3.png"
+            <img alt="dit is boek3" class="books-image" data-filter="sport" height="200em" src="../image/book-3.png"
                  width="200em">
             <section class="title-book"><a href="#">karl lagerfied</a></section>
             <p class="content-book-under-name-book">karl lagerfield is een modeontwerper</p>
 
         </section>
         <section class="gridbookfourth">
-            <img alt="dit is boek4" class="books-image" data-filter="mode" height="200em" src="./image/book-4.png"
+            <img alt="dit is boek4" class="books-image" data-filter="mode" height="200em" src="../image/book-4.png"
                  width="200em">
             <section class="title-book"><a href="#">the devils wears prada</a></section>
             <p class="content-book-under-name-book">anna wintour is een modeontwerper en dit boek gaat over 1 van de
@@ -228,25 +199,12 @@
 
         </section>
         <section class="gridbookfive">
-            <img alt="dit is boek5" class="books-image" data-filter="kunst" height="200em" src="./image/book-5.png"
+            <img alt="dit is boek5" class="books-image" data-filter="kunst" height="200em" src="../image/book-5.png"
                  width="200em">
             <section class="title-book"><a href="#">van gogh</a></section>
             <p class="content-book-under-name-book">van gogh is een kunstunaar</p>
         </section>
     </div>
-    <!--    deze filter funcite werkt zonder dat je op een knop hoeft te drukken-->
-    <ul id="myUL">
-
-        <li class="voetbal" data-filter="sport"><a href="#">ajax</a></li>
-        <li class="voetbal" data-filter="sport"><a href="#">psv</a></li>
-        <li class="mode" data-filter="mode"><a href="#">karl lagerfield</a></li>
-        <li class="mode" data-filter="mode"><a href="#">anna wintour</a></li>
-        <li class="booklist" data-filter="kunst"><a href="#">vermeer</a></li>
-        <li class="booklist" data-filter="kunst"><a href="#">mona lisa</a></li>
-        <li class="booklist" data-filter="kunst"><a href="#">Van gogh</a></li>
-
-    </ul>
-
 </section>
 </body>
 </html>
