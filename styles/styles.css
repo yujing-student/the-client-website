@@ -395,6 +395,7 @@ body.dark .home .text {
 
 
 /*code index html file en op het scherm mobiel*/
+
 /*TODO maken scrollbaar*/
 .grid-container-welkom {
     display: grid;
@@ -565,6 +566,12 @@ and (-webkit-min-device-pixel-ratio: 1) {
     .grid-container-welkom {
         width: 40em;
         grid-template-rows: 4em 4em 4em;
+        display: grid;
+        grid-template-columns: 20em;
+        background-color: white;
+        padding: 2em;
+
+
     }
 
     .grid-content-paragraph {
@@ -591,6 +598,13 @@ and (-webkit-min-device-pixel-ratio: 1) {
 
     .gridbooks {
         top: -2em;
+        display: grid;
+        grid-template-rows: 20em 20em 20em 20em 20em;
+        grid-template-columns: 22em;
+        position: relative;
+        width: 40em;
+
+        gap: 1em;
     }
 
 }
