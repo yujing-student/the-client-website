@@ -395,157 +395,155 @@ body.dark .home .text {
 
 
 /*code index html file en op het scherm mobiel*/
-@media (min-device-width: 1px)  and (max-device-width: 768px) {
-    .grid-container-welkom {
-        display: grid;
-        width: 23em;
-        grid-template-columns: 20em;
-        grid-template-rows: 4em 4em 12em;
-        background-color: white;
-        padding: 2em;
-    }
+/*@media (min-device-width: 1px)  and (max-device-width: 768px) {*/
+.grid-container-welkom {
+    display: grid;
+    width: 23em;
+    grid-template-columns: 20em;
+    grid-template-rows: 4em 4em 12em;
+    background-color: white;
+    padding: 2em;
+}
 
-    .grid-h1-title {
-        grid-column: 1;
-        grid-row: 1;
-    }
+.grid-h1-title {
+    grid-column: 1;
+    grid-row: 1;
+}
 
-    .grid-name {
-        grid-column: 1;
-        grid-row: 2;
-    }
+.grid-name {
+    grid-column: 1;
+    grid-row: 2;
+}
 
-    .grid-content-paragraph {
-        grid-column: 1/2;
-        grid-row: 3;
-        line-height: 2em;
-    }
+.grid-content-paragraph {
+    grid-column: 1/2;
+    grid-row: 3;
+    line-height: 2em;
+}
 
-    /*dit is de li met depsitos*/
-    .grid-section-explain {
-        position: relative;
-        top: 1em;
-        display: grid;
-        width: 23em;
-        grid-template-columns: 20em;
-        grid-template-rows: 23em;
-        gap: 13em;
-        background-color: white;
-        padding: 2em;
+/*dit is de li met depsitos*/
+.grid-section-explain {
+    position: relative;
+    top: 1em;
+    display: grid;
+    width: 23em;
+    grid-template-columns: 20em;
+    grid-template-rows: 23em;
+    gap: 13em;
+    background-color: white;
+    padding: 2em;
 
-        /*border-style: solid;*/
-    }
+    /*border-style: solid;*/
+}
 
-    .ul-explanation {
-        display: grid;
-        gap: 1em;
-        width: 20em;
-        line-height: 2em;
-    }
+.ul-explanation {
+    display: grid;
+    gap: 1em;
+    width: 20em;
+    line-height: 2em;
+}
 
-    /*my ul is een id vanwege de filter functie in javascript*/
-    #myUL {
-        position: relative;
-        top: 15em;
-        width: 23em;
-        display: grid;
-        grid-template-columns: 20em;
-        grid-template-rows: 5em 5em 5em 5em 5em;
-        background-color: white;
-        /*border-style: solid;*/
-    }
+/*my ul is een id vanwege de filter functie in javascript*/
+#myUL {
+    position: relative;
+    top: 15em;
+    width: 23em;
+    display: grid;
+    grid-template-columns: 20em;
+    grid-template-rows: 5em 5em 5em 5em 5em;
+    background-color: white;
+    /*border-style: solid;*/
+}
 
-    /*todo dit moet nog inklapbaar worden*/
-    /*todo dit lezen https://www.w3schools.com/howto/howto_js_collapsible.asp zoeist misschien*/
-    .filter-function {
-        position: relative;
-        top: 3em;
-        width: 10em;
-        display: flex;
-        background-color: white;
-        /*border-style: solid;*/
-    }
+/*todo dit moet nog inklapbaar worden*/
+/*todo dit lezen https://www.w3schools.com/howto/howto_js_collapsible.asp zoeist misschien*/
+.filter-function {
+    position: relative;
+    top: 3em;
+    width: 10em;
+    display: flex;
+    background-color: white;
+    /*border-style: solid;*/
+}
 
-    /*vanaf hier beginnen de boeken*/
-    .gridbooks {
-        top: 6em;
-        display: grid;
-        grid-template-rows: 19em 19em 18em 19em 19em;
-        grid-template-columns: 14em 15em;
-        position: relative;
-        gap: 2em;
-    }
+/*vanaf hier beginnen de boeken*/
+.gridbooks {
+    top: 6em;
+    display: grid;
+    grid-template-rows: 19em 19em 18em 19em 19em;
+    grid-template-columns: 14em 15em;
+    position: relative;
+    gap: 2em;
+}
 
-    .firstbook {
-        display: grid;
-        grid-row: 1;
-        grid-column: 1;
-        background-color: white;
-        /*    positionneren*/
-
-
-    }
-
-    .secondbook {
-        display: grid;
-        grid-row: 2;
-        grid-column: 1;
-        background-color: white;
-
-    }
-
-    .thirdbook {
-        display: grid;
-        grid-row: 3;
-        grid-column: 1;
-        background-color: white;
-    }
-
-    .fourthbook {
-        display: grid;
-        grid-row: 4;
-        grid-column: 1;
-        background-color: white;
-    }
-
-    .fivebook {
-        display: grid;
-        grid-row: 5;
-        grid-column: 1/2;
-        background-color: white;
-    }
-
-    /*opmaak en positioneren van de tiel content en foto*/
-    .sectiontitle-book {
-        display: block;
-        position: relative;
-        right: 0em;
-        text-align: center;
-        width: 15em;
-
-    }
-
-    .books-image {
-        display: block;
-        position: relative;
-        right: -1em;
-
-    }
-
-    /*content-book-under-name-book dit is voor content maar ga ik niet gebruiken*/
-    .booktitle {
-        display: block;
-        position: relative;
-        width: 6em;
-        left: 1.8em;
-        color: #000000;
-        font-size: 1.5em;
-        justify-content: center;
-        /*background-color: #242526;*/
-    }
+.firstbook {
+    display: grid;
+    grid-row: 1;
+    grid-column: 1;
+    background-color: white;
+    /*    positionneren*/
 
 
 }
+
+.secondbook {
+    display: grid;
+    grid-row: 2;
+    grid-column: 1;
+    background-color: white;
+
+}
+
+.thirdbook {
+    display: grid;
+    grid-row: 3;
+    grid-column: 1;
+    background-color: white;
+}
+
+.fourthbook {
+    display: grid;
+    grid-row: 4;
+    grid-column: 1;
+    background-color: white;
+}
+
+.fivebook {
+    display: grid;
+    grid-row: 5;
+    grid-column: 1/2;
+    background-color: white;
+}
+
+/*opmaak en positioneren van de tiel content en foto*/
+.sectiontitle-book {
+    display: block;
+    position: relative;
+    right: 0em;
+    text-align: center;
+    width: 15em;
+
+}
+
+.books-image {
+    display: block;
+    position: relative;
+    right: -1em;
+
+}
+
+/*content-book-under-name-book dit is voor content maar ga ik niet gebruiken*/
+.booktitle {
+    display: block;
+    position: relative;
+    width: 6em;
+    left: 1.8em;
+    color: #000000;
+    font-size: 1.5em;
+    justify-content: center;
+    /*background-color: #242526;*/
+}
+
 
 /*TODO in een andere versie all deze code kopieren en plakken met 3 media queries mobiel ipad tablet*/
 
@@ -714,7 +712,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
 
         grid-template-columns: 20em;
         grid-template-rows: 15em;
-        gap: 5em;
+        gap: 13em;
         background-color: white;
         padding: 2em;
     }
