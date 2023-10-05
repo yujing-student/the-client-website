@@ -24,6 +24,16 @@ modeSwitch.addEventListener("click", () => {
 
     }
 });
+// datatable voor boete dit werkt blijkbaar niet
+
+
+import DataTable from 'datatables.net';
+import languageDE from 'datatables.net-plugins/i18n/de-DE.mjs';
+
+var table = new DataTable('#myTable', {
+    language: languageDE,
+});
+
 
 //mijn code
 // zoekfunctie op naam werkt niet geheel w3schools als je wat intypt krijg je resultaat bij de lijst onderaan

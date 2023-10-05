@@ -444,6 +444,28 @@ body.dark .home .text {
     line-height: 1.55em;
 }
 
+.div-boete-table {
+    position: relative;
+    top: 5em;
+}
+
+table {
+    font-family: AvenirRoman;
+    border-collapse: collapse;
+    /*width: 100%;*/
+    background-color: white;
+}
+
+td, th {
+    border: 0.2em solid black;
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    background-color: #e78c70;
+}
+
 /*my ul is een id vanwege de filter functie in javascript*/
 #myUL {
     position: relative;
@@ -454,6 +476,22 @@ body.dark .home .text {
     grid-template-rows: 5em 5em 5em 5em 5em;
     background-color: white;
     /*border-style: solid;*/
+}
+
+/*.div-boete-table {*/
+/*    position: relative;*/
+/*    top: 5em;*/
+/*    width: 23em;*/
+/*    background-color: white;*/
+/*}*/
+
+
+.searchbookbox {
+    position: relative;
+    top: 5em;
+    background-color: white;
+    height: 5em;
+    width: 23em;
 }
 
 /*todo dit moet nog inklapbaar worden*/
@@ -578,6 +616,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
 
     }
 
+
     .grid-section-explain {
         width: 35em;
         position: relative;
@@ -591,6 +630,53 @@ and (-webkit-min-device-pixel-ratio: 1) {
         padding: 2em;
     }
 
+
+    .div-boete-table {
+        position: relative;
+        top: 5em;
+        width: 35em;
+        background-color: white;
+    }
+
+
+    table {
+        font-family: AvenirRoman;
+        border-collapse: collapse;
+        /*width: 100%;*/
+        background-color: white;
+    }
+
+    td, th {
+        border: 0.2em solid black;
+        text-align: left;
+        padding: 8px;
+    }
+
+    th {
+        background-color: #e78c70;
+    }
+
+    .searchbookbox {
+        position: relative;
+        top: 5em;
+        background-color: white;
+        height: 5em;
+        width: 23em;
+    }
+
+    /*h2:nth-child(1) {*/
+    /*    background-color: white;*/
+    /*    width: 14em;*/
+    /*    position: relative;*/
+    /*    top: 1em;*/
+    /*    height: 5em;*/
+    /*}*/
+    /*.paragraph-table-info {*/
+    /*    position: relative;*/
+    /*    top: 2em;*/
+    /*    background-color: white;*/
+    /*    width: 25em;*/
+    /*}*/
     .filter-function {
         top: 6.4em;
         left: 35em;
@@ -726,14 +812,43 @@ and (-webkit-min-device-pixel-ratio: 1) {
 
     }
 
-    .searchbookbox {
+    .div-boete-table {
+        position: relative;
+        top: 5em;
+        width: 35em;
+        background-color: white;
+    }
 
+    table {
+        font-family: AvenirRoman;
+        border-collapse: collapse;
+        /*width: 100%;*/
+        background-color: white;
+    }
+
+    td, th {
+        border: 0.2em solid black;
+        text-align: left;
+        padding: 8px;
+    }
+
+    th {
+        background-color: #e78c70;
+    }
+
+
+    .searchbookbox {
+        position: relative;
+        top: 5em;
+        background-color: white;
+        height: 5em;
+        width: 23em;
     }
 
     .filter-function {
         /*left: 0em;*/
         position: relative;
-        top: 1.4em;
+        top: 5em;
         width: 10em;
         display: flex;
         background-color: white;
@@ -741,7 +856,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
     }
 
     .gridbooks {
-        top: 3em;
+        top: 8em;
         display: grid;
         grid-template-rows: 19em 19em 18em 19em 19em;
         grid-template-columns: 14em 14em 14em;

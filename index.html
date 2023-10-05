@@ -10,6 +10,9 @@
 
     <!-- Link to boxicons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.css" rel="stylesheet"/>
+
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.js"></script>
 
     <!-- Link to JavaScript script -->
     <script defer src="scripts/script.js"></script>
@@ -138,7 +141,7 @@
 <!--deze layout gebruiken-->
 
 <section class="home">
-    <!--TODO maken scrollbaar-->
+    <!--TODO navragen aan wing of ze 4de punt van deze issue heeft gedaan https://github.com/fdnd-agency/oba/issues/27-->
     <div class="text"><img alt="logo" src="image/oba_20.png"></div>
     <div class="grid-container-welkom">
         <h1 class="grid-h1-title">homepagina</h1>
@@ -150,7 +153,11 @@
             een boek of dvd verder kunt u uw reserveringen bekijken en uw uitlengeschiedenis zien daarnaast kunt u
             ook:</p>
     </div>
-    <section class="grid-section-explain">
+    <div class="grid-section-explain">
+        <!--        deze error kwam bij validator.w3.org :Warning: Section lacks heading. Consider using h2-h6 elements to add identifying headings to all sections, or else use a div element instead for any cases where no heading is needed.
+        From line 153, column 5; to line 153, column 42
+
+        /div>↩    <section class="grid-section-explain">↩     -->
         <ul class="ul-explanation">
             <li class="">openstaande bedragen via IDEAL zien</li>
             <li class="">via de optie deposito's een tegoed op uw pas zetten waarmee u toekomstige boetes,leengeld,etc
@@ -165,20 +172,64 @@
         </ul>
         <p>aan de zijkant kunt u naar het menu gaan en op een van de iconen klikken om naar de gewenste pagina te gaan
             ook kunt u het menu uitklappen</p>
-    </section>
+    </div>
+    <!--table waarvan de data uit de databse gehaald word en getoond word in een tabel zodat de gerbuiker exact weet wanneer dat boek ingeleverd moet worden-->
+    <div class="div-boete-table">
+        <h2>overzicht boeken in te leveren om boete te voorkomen</h2>
+        <p class="paragraph-table-info">levert u een boek na de in te leveren datum in dan krijgt u een boete</p>
+        <table>
+            <tr>
+                <th>naam boek</th>
+                <th>datum in te leveren</th>
+
+            </tr>
+            <tr>
+                <td>ajax jaarboek</td>
+                <td>28-12-2023</td>
+                <!--                <td>Germany</td>-->
+            </tr>
+            <tr>
+                <td>devils wears prada</td>
+                <td>15-10-2023</td>
+                <!--                <td>Mexico</td>-->
+            </tr>
+            <tr>
+                <td>psv jaarboek</td>
+                <td>15-12-2023</td>
+                <!--                <td>Austria</td>-->
+            </tr>
+            <tr>
+                <td>gijp</td>
+                <td>10-11-2023</td>
+                <!--                <td>UK</td>-->
+            </tr>
+            <tr>
+                <td>nirwana</td>
+                <td>14-2-2023</td>
+                <!--                <td>Canada</td>-->
+            </tr>
+            <tr>
+                <td>afkowobo</td>
+                <td>19-10-2023</td>
+                <!--                <td>Italy</td>-->
+            </tr>
+        </table>
+
+    </div>
 
     <br>
-    <h2>hier kunt u zoeken naar boeken </h2>
+
     <!--    <p>je typt in de zoekbalk de naam van het boek of het onderwerp</p>-->
     <div class="searchbookbox">
+        <h2>hier kunt u zoeken naar boeken </h2>
         <label for="myInput"></label><input id="myInput" onkeyup="myFunction()" placeholder="typ hier uw boek in"
                                             type="search">
         <button>zoeken</button>
 
-        <section class="filter-function">
+        <div class="filter-function">
             <!--        <button>filterfunctie</button>-->
             <!--    https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox-->
-            <section class="">
+            <div class="">
                 <!--            hamburger menue voor mobiel als coolblue variant niet lukt-->
                 <!--            zoekresulaten doen als in w3schools klik ik op zoeken dan komt er een div tevoorschijn-->
                 <!--          https://www.plusform.de/en/products/neuland-fineliner-fine-one-sketch-black-kaufen
@@ -203,8 +254,8 @@
 
                 </form>
 
-            </section>
-        </section>
+            </div>
+        </div>
         <div class="gridbooks">
             <!--            <p>dit zijn de gevonden resultaten</p>-->
             <!--        hier moet je een grid indeling nog bedenken hoe je dat wilt gaan doen-->
