@@ -457,7 +457,7 @@ body.dark .home .text {
 }
 
 /*todo dit moet nog inklapbaar worden*/
-/*todo dit lezen https://www.w3schools.com/howto/howto_js_collapsible.asp zoeist misschien*/
+/*https://www.w3schools.com/howto/howto_js_collapsible.asp zoeist misschien*/
 .filter-function {
     position: relative;
     top: 3em;
@@ -546,7 +546,7 @@ body.dark .home .text {
 }
 
 
-/*TODO in een andere versie all deze code kopieren en plakken met 3 media queries mobiel ipad tablet*/
+/*TODO naar tekst grootte kijken voor ipad en iphone of dat niet te groot is*/
 
 /*vanaf hier begint ipad formaat en weer van boven naar beneden gaan*/
 @media (min-device-width: 48em)  and (max-device-width: 64em)
