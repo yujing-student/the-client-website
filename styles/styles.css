@@ -408,6 +408,7 @@ body.dark .home .text {
 .grid-h1-title {
     grid-column: 1;
     grid-row: 1;
+    text-transform: capitalize;
 }
 
 .grid-name {
@@ -418,7 +419,8 @@ body.dark .home .text {
 .grid-content-paragraph {
     grid-column: 1/2;
     grid-row: 3;
-    line-height: 2em;
+    line-height: 1.55em;
+
 }
 
 /*dit is de li met depsitos*/
@@ -428,8 +430,7 @@ body.dark .home .text {
     display: grid;
     width: 23em;
     grid-template-columns: 20em;
-    grid-template-rows: 23em;
-    gap: 13em;
+    grid-template-rows: 30em;
     background-color: white;
     padding: 2em;
 
@@ -440,7 +441,7 @@ body.dark .home .text {
     display: grid;
     gap: 1em;
     width: 20em;
-    line-height: 2em;
+    line-height: 1.55em;
 }
 
 /*my ul is een id vanwege de filter functie in javascript*/
@@ -519,7 +520,7 @@ body.dark .home .text {
 .sectiontitle-book {
     display: block;
     position: relative;
-    right: 0em;
+    /*right: 0em;*/
     text-align: center;
     width: 15em;
 
@@ -548,7 +549,7 @@ body.dark .home .text {
 /*TODO in een andere versie all deze code kopieren en plakken met 3 media queries mobiel ipad tablet*/
 
 /*vanaf hier begint ipad formaat en weer van boven naar beneden gaan*/
-@media (min-device-width: 768px)  and (max-device-width: 1024px)
+@media (min-device-width: 48em)  and (max-device-width: 64em)
 and (-webkit-min-device-pixel-ratio: 1) {
     .grid-container-welkom {
         display: grid;
@@ -567,7 +568,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
 
     .grid-content-paragraph {
         grid-column: 1/3;
-        line-height: 2em;
+        line-height: 1.55em;
     }
 
     .ul-explanation {
@@ -661,7 +662,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
     .sectiontitle-book {
         display: block;
         position: relative;
-        right: 0em;
+        /*right: 0em;*/
         text-align: center;
         width: 15em;
 
@@ -682,7 +683,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
 }
 
 /*vanaf hier begint laptop deskopt of nog groter formaat*/
-@media (min-device-width: 1025px) {
+@media (min-device-width: 65em) {
     .grid-container-welkom {
         width: 34em;
         grid-template-rows: 4em 4em 9em;
@@ -701,7 +702,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
 
     .grid-content-paragraph {
         grid-column: 1/4;
-        line-height: 2em;
+        line-height: 1.55em;
     }
 
     .grid-section-explain {
@@ -711,8 +712,8 @@ and (-webkit-min-device-pixel-ratio: 1) {
         display: grid;
 
         grid-template-columns: 20em;
-        grid-template-rows: 15em;
-        gap: 13em;
+        grid-template-rows: 8em;
+        /*gap: 13em;*/
         background-color: white;
         padding: 2em;
     }
@@ -730,7 +731,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
     }
 
     .filter-function {
-        left: 0em;
+        /*left: 0em;*/
         position: relative;
         top: 1.4em;
         width: 10em;
@@ -798,7 +799,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
     .sectiontitle-book {
         display: block;
         position: relative;
-        right: 0em;
+        /*right: 0em;*/
         text-align: center;
         width: 15em;
 
