@@ -186,11 +186,14 @@
     <!--    <p>je typt in de zoekbalk de naam van het boek of het onderwerp</p>-->
     <!--   https://github.com/fdnd-agency/oba/issues/21  -->
     <div class="searchbookbox">
-        <h2>hier kunt u zoeken naar boeken </h2>
-        <label for="myInput"></label><input id="myInput" placeholder="typ hier uw boek in"
-                                            type="search">
-        <button class="button-search" onclick="showdivresults()">zoeken</button>
+        <h2>hier kunt u zoeken naar boekekn dvd's of activiteiten en klik op de button zoek om resulten te zien</h2>
+        <div class="searchbox-mutlitple">
+            <label for="myInput"></label><input id="myInput" placeholder="typ hier uw boek in"
+                                                type="search">
+            <button class="button-search" onclick="showdivresults()" title="searchbutton">zoeken</button>
+        </div>
 
+        <!--todo 2de filter functie maken voor boeken dvd activiteit-->
         <div class="filter-function">
             <!--        <button>filterfunctie</button>-->
             <!--    https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox-->
@@ -271,29 +274,29 @@
             <p class="start-dvd-items">hier zijn de resultaten voor de dvd</p>
             <div class="dvd-items">
 
-                <div class="firstdvd">
+                <div class="firstbook">
                     <img alt="dit is dvd1" class="books-image" data-filter="dvd" height="200px"
                          src="https://cdn.mos.cms.futurecdn.net/mz8wayWPEazTg6ZPK9bHgZ-970-80.jpg.webp"
                          width="200px">
-                    <div class="dvd-title"><a class="booktitle" href="#">fliken maastricht</a></div>
+                    <div class="sectiontitle-book"><a class="booktitle" href="#">fliken maastricht</a></div>
                 </div>
-                <div class="seconddvd">
+                <div class="secondbook">
                     <img alt="dit is dvd1" class="books-image" data-filter="dvd" height="200px"
                          src="https://cdn.mos.cms.futurecdn.net/mz8wayWPEazTg6ZPK9bHgZ-970-80.jpg.webp"
                          width="200px">
-                    <div class="dvd-title"><a class="booktitle" href="#">fliken maastricht</a></div>
+                    <div class="sectiontitle-book"><a class="booktitle" href="#">fliken maastricht</a></div>
                 </div>
-                <div class="thirddvd">
+                <div class="thirdbook">
                     <img alt="dit is dvd1" class="books-image" data-filter="dvd" height="200px"
                          src="https://cdn.mos.cms.futurecdn.net/mz8wayWPEazTg6ZPK9bHgZ-970-80.jpg.webp"
                          width="200px">
-                    <div class="dvd-title"><a class="booktitle" href="#">fliken maastricht</a></div>
+                    <div class="sectiontitle-book"><a class="booktitle" href="#">fliken maastricht</a></div>
                 </div>
-                <div class="fourthdvd">
+                <div class="fourthbook">
                     <img alt="dit is dvd1" class="books-image" data-filter="dvd" height="200px"
                          src="https://cdn.mos.cms.futurecdn.net/mz8wayWPEazTg6ZPK9bHgZ-970-80.jpg.webp"
                          width="200px">
-                    <div class="dvd-title"><a class="booktitle" href="#">fliken maastricht</a></div>
+                    <div class="sectiontitle-book"><a class="booktitle" href="#">fliken maastricht</a></div>
                 </div>
 
             </div>
