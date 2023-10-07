@@ -1,17 +1,17 @@
 /* Fonts being used by the oba */
 @font-face {
     font-family: AvenirRoman;
-    src: url(../font/Avenir-roman.ttf);
+    src: url(../../font/Avenir-roman.ttf);
 }
 
 @font-face {
     font-family: AvenirMedium;
-    src: url(../font/Avenir-medium.ttf);
+    src: url(../../font/Avenir-medium.ttf);
 }
 
 @font-face {
     font-family: AvenirBlack;
-    /*src: url(../font/Avenir\ -black.ttf);*/
+    src: url(../../font/Avenir-black.ttf);
 }
 
 /* Custom properties */
@@ -376,6 +376,39 @@ body.dark .home .text {
     gap: 13em;
 }
 
+.parent1 {
+    font-size: 4em;
+    text-align: center;
+    position: relative;
+    left: 1.2em;
+    top: -0.3em;
+}
+
+.child1 {
+    display: inline-block;
+    font-size: 4em;
+    text-align: center;
+    position: relative;
+    left: 1.2em;
+    top: -0.3em;
+}
+
+.child2 {
+    font-size: 4em;
+    text-align: center;
+    position: relative;
+    left: 1.2em;
+    top: -0.3em;
+}
+
+.parent2 {
+    font-size: 4em;
+    text-align: center;
+    position: relative;
+    left: 1.2em;
+    top: -0.3em;
+}
+
 @media (min-device-width: 48em)  and (max-device-width: 64em) {
     .grid-container {
         display: grid;
@@ -392,4 +425,12 @@ body.dark .home .text {
         grid-template-columns: 10em 10em 10em 10em;
         gap: 13em;
     }
+
+    .child1 {
+        font-size: 4em;
+        text-align: center;
+        position: relative;
+        left: 1.3em;
+    }
 }
+
