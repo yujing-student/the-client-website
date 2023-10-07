@@ -63,7 +63,7 @@ function showdivresults() {
 }
 
 function boeken() {
-    alert("ga naar de pagina uitleningen en verlengen om te zien welke boeken gaan verlopen");
+    alert("druk op oke om naar de tabel te gaan emt daarin het boete overzicht");
     // https://www.w3schools.com/jsref/met_win_alert.asp
 }
 

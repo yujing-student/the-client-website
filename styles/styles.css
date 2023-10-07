@@ -378,9 +378,11 @@ body.dark .home .text {
 
 /*code index html file en op het scherm mobiel*/
 /*@media (min-device-width: 1px)  and (max-device-width: 768px) {*/
+/*dit is het 1ste blok van de witte blokes met tekst*/
 .grid-container-welkom {
     display: grid;
     width: 23em;
+    /*widht is de breedte van de witte achterrondkleur*/
     grid-template-columns: 20em;
     grid-template-rows: 4em 4em 12em;
     background-color: white;
@@ -394,18 +396,20 @@ body.dark .home .text {
 }
 
 .grid-name {
+    /*naam van de persoon*/
     grid-column: 1;
     grid-row: 2;
 }
 
 .grid-content-paragraph {
+    /*tekst in het 1ste blok*/
     grid-column: 1/2;
     grid-row: 3;
     line-height: 1.55em;
 
 }
 
-/*dit is de li met depsitos*/
+/*dit is de li met functies onder andere */
 .grid-section-explain {
     position: relative;
     top: 1em;
@@ -421,32 +425,34 @@ body.dark .home .text {
 }
 
 .ul-explanation {
+    /*dit zijn de li die zit onder de grid-section-explanation*/
     display: grid;
     width: 20em;
     line-height: 1.35em;
 }
 
-/*.div-boete-table {*/
-/*    position: relative;*/
-/*    top: 5em;*/
-/*}*/
+/*deze code is oud*/
+.div-boete-table {
+    position: relative;
+    top: 15em;
+}
 
-/*table {*/
-/*    font-family: AvenirRoman;*/
-/*    border-collapse: collapse;*/
-/*    !*width: 100%;*!*/
-/*    background-color: white;*/
-/*}*/
+table {
+    font-family: AvenirRoman;
+    border-collapse: collapse;
+    /*width: 100%;*/
+    background-color: white;
+}
 
-/*td, th {*/
-/*    border: 0.2em solid black;*/
-/*    text-align: left;*/
-/*    padding: 8px;*/
-/*}*/
+td, th {
+    border: 0.2em solid black;
+    text-align: left;
+    padding: 8px;
+}
 
-/*th {*/
-/*    background-color: #e78c70;*/
-/*}*/
+th {
+    background-color: #e78c70;
+}
 
 /*my ul is een id vanwege de filter functie in javascript*/
 #myUL {
