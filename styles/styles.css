@@ -360,7 +360,7 @@ body.dark .switch::before {
 }
 
 .sidebar.close ~ .home {
-    left: 178px;
+    left: 126px;
     height: 100vh;
     width: calc(100% - 78px);
 }
@@ -413,6 +413,7 @@ body.dark .home .text {
     width: 23em;
     grid-template-columns: 20em;
     grid-template-rows: 30em;
+    gap: 2em;
     background-color: white;
     padding: 2em;
 
@@ -421,32 +422,31 @@ body.dark .home .text {
 
 .ul-explanation {
     display: grid;
-    gap: 1em;
     width: 20em;
-    line-height: 1.55em;
+    line-height: 1.35em;
 }
 
-.div-boete-table {
-    position: relative;
-    top: 5em;
-}
+/*.div-boete-table {*/
+/*    position: relative;*/
+/*    top: 5em;*/
+/*}*/
 
-table {
-    font-family: AvenirRoman;
-    border-collapse: collapse;
-    /*width: 100%;*/
-    background-color: white;
-}
+/*table {*/
+/*    font-family: AvenirRoman;*/
+/*    border-collapse: collapse;*/
+/*    !*width: 100%;*!*/
+/*    background-color: white;*/
+/*}*/
 
-td, th {
-    border: 0.2em solid black;
-    text-align: left;
-    padding: 8px;
-}
+/*td, th {*/
+/*    border: 0.2em solid black;*/
+/*    text-align: left;*/
+/*    padding: 8px;*/
+/*}*/
 
-th {
-    background-color: #e78c70;
-}
+/*th {*/
+/*    background-color: #e78c70;*/
+/*}*/
 
 /*my ul is een id vanwege de filter functie in javascript*/
 #myUL {
@@ -476,6 +476,14 @@ th {
     width: 23em;
 }
 
+.button-search {
+    padding: 1em 1em;
+    display: inline-block;
+    color: #fff;
+    background-color: #28a8e0;
+    height: 3em;
+}
+
 /*todo dit moet nog inklapbaar worden*/
 /*https://www.w3schools.com/howto/howto_js_collapsible.asp zoeist misschien*/
 .filter-function {
@@ -487,14 +495,48 @@ th {
     /*border-style: solid;*/
 }
 
+/*inklapare button met filter uncties*/
+.collaps-open-funtion {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+}
+
+.collapsible {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+
+.active, .collapsible {
+    background-color: #555;
+}
+
+.showresults {
+    display: none;
+}
+
+.start-book-items {
+    position: relative;
+    top: 5em;
+}
+
 /*vanaf hier beginnen de boeken*/
 .gridbooks {
     top: 6em;
     display: grid;
-    grid-template-rows: 19em 19em 18em 19em 19em;
+    grid-template-rows: 19em 19em 18em 19em;
     grid-template-columns: 14em 15em;
     position: relative;
     gap: 2em;
+
 }
 
 .firstbook {
@@ -565,8 +607,70 @@ th {
     /*background-color: #242526;*/
 }
 
+.start-dvd-items {
+    position: relative;
+    top: 15em;
+}
+
+.dvd-items {
+    top: 15em;
+    display: grid;
+    grid-template-rows: 19em 19em;
+    grid-template-columns: 14em 14em 14em;
+    position: relative;
+    gap: 2em;
+    /*background-color: red;*/
+}
+
+.firstdvd {
+    display: grid;
+    grid-row: 1;
+    grid-column: 1;
+    background-color: white;
+    /*    positionneren*/
+
+
+}
+
+.seconddvd {
+    display: grid;
+    grid-row: 2;
+    grid-column: 1;
+    background-color: white;
+
+}
+
+.thirddvd {
+    display: grid;
+    grid-row: 3;
+    grid-column: 1;
+    background-color: white;
+}
+
+.fourthdvd {
+    display: grid;
+    grid-row: 4;
+    grid-column: 1;
+    background-color: white;
+}
+
+.fivedvd {
+    display: grid;
+    grid-row: 5;
+    grid-column: 1/2;
+    background-color: white;
+}
+
+.dvd-title {
+    display: block;
+    position: relative;
+    /*right: 0em;*/
+    text-align: center;
+    width: 15em;
+}
+
 /*vanaf hier begint ipad formaat en weer van boven naar beneden gaan*/
-@media (min-device-width: 48em)  and (max-device-width: 64em)
+@media (min-width: 48em)  and (max-width: 64em)
 and (-webkit-min-device-pixel-ratio: 1) {
     .grid-container-welkom {
         display: grid;
@@ -591,58 +695,52 @@ and (-webkit-min-device-pixel-ratio: 1) {
     .ul-explanation {
         width: 32em;
         display: grid;
-        gap: 1em;
+
 
     }
 
 
     .grid-section-explain {
-        width: 35em;
         position: relative;
         top: 1em;
         display: grid;
-
+        width: 34em;
         grid-template-columns: 20em;
-        grid-template-rows: 23em;
-        gap: 2.5em;
+        grid-template-rows: 30em;
+        gap: 2em;
         background-color: white;
         padding: 2em;
+
     }
 
-
-    .div-boete-table {
-        position: relative;
-        top: 5em;
-        width: 35em;
-        background-color: white;
-    }
-
-
-    table {
-        font-family: AvenirRoman;
-        border-collapse: collapse;
-        /*width: 100%;*/
-        background-color: white;
-    }
-
-    td, th {
-        border: 0.2em solid black;
-        text-align: left;
-        padding: 8px;
-    }
-
-    th {
-        background-color: #e78c70;
-    }
-
-    .searchbookbox {
-        position: relative;
-        top: 5em;
-        background-color: white;
-        height: 5em;
-        width: 23em;
-    }
-
+    /*!*code beote tabel*!*/
+    /*.div-boete-table {*/
+    /*    position: relative;*/
+    /*    top: 5em;*/
+    /*    width: 35em;*/
+    /*    background-color: white;*/
+    /*}*/
+    /*table {*/
+    /*    font-family: AvenirRoman;*/
+    /*    border-collapse: collapse;*/
+    /*    !*width: 100%;*!*/
+    /*    background-color: white;*/
+    /*}*/
+    /*td, th {*/
+    /*    border: 0.2em solid black;*/
+    /*    text-align: left;*/
+    /*    padding: 8px;*/
+    /*}*/
+    /*th {*/
+    /*    background-color: #e78c70;*/
+    /*}*/
+    /*.searchbookbox {*/
+    /*    position: relative;*/
+    /*    top: 5em;*/
+    /*    background-color: white;*/
+    /*    height: 5em;*/
+    /*    width: 23em;*/
+    /*}*/
     /*h2:nth-child(1) {*/
     /*    background-color: white;*/
     /*    width: 14em;*/
@@ -659,22 +757,55 @@ and (-webkit-min-device-pixel-ratio: 1) {
     .filter-function {
         top: 6.4em;
         left: 35em;
-
-
         position: relative;
-
         width: 10em;
         display: flex;
         background-color: white;
     }
 
+    /*inklapare button met filter uncties*/
+    .collaps-open-funtion {
+        padding: 0 18px;
+        display: none;
+        overflow: hidden;
+        background-color: #f1f1f1;
+    }
+
+    .collapsible {
+        background-color: #777;
+        color: white;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+    }
+
+    .active, .collapsible {
+        background-color: #555;
+    }
+
+
+    .showresults {
+        display: none;
+    }
+
+    .start-book-items {
+        position: relative;
+        top: -3em;
+        /*left: 10em;*/
+    }
+
     .gridbooks {
         top: -2em;
         display: grid;
-        grid-template-rows: 19em 19em 18em 19em 19em;
+        grid-template-rows: 19em 19em 18em;
         grid-template-columns: 14em 15em;
         position: relative;
         gap: 2em;
+
 
     }
 
@@ -745,10 +876,73 @@ and (-webkit-min-device-pixel-ratio: 1) {
         /*background-color: #242526;*/
     }
 
+    .start-dvd-items {
+        position: relative;
+        top: 15em;
+    }
+
+    .dvd-items {
+        top: 15em;
+        display: grid;
+        grid-template-rows: 19em 19em;
+        grid-template-columns: 14em 14em 14em;
+        position: relative;
+        gap: 2em;
+        /*background-color: red;*/
+    }
+
+    .firstdvd {
+        display: grid;
+        grid-row: 1;
+        grid-column: 1;
+        background-color: white;
+        /*    positionneren*/
+
+
+    }
+
+    .seconddvd {
+        display: grid;
+        grid-row: 1;
+        grid-column: 2;
+        background-color: white;
+
+    }
+
+    .thirddvd {
+        display: grid;
+        grid-row: 2;
+        grid-column: 1;
+        background-color: white;
+    }
+
+    .fourthdvd {
+        display: grid;
+        grid-row: 2;
+        grid-column: 2;
+        background-color: white;
+    }
+
+    .fivedvd {
+        display: grid;
+        grid-row: 3;
+        grid-column: 1/2;
+        background-color: white;
+    }
+
+    .dvd-title {
+        display: block;
+        position: relative;
+        /*right: 0em;*/
+        text-align: center;
+        width: 15em;
+    }
+
+
 }
 
 /*vanaf hier begint laptop deskopt of nog groter formaat*/
-@media (min-device-width: 65em) {
+@media (min-width: 65em) {
     .grid-container-welkom {
         width: 34em;
         grid-template-rows: 4em 4em 9em;
@@ -771,51 +965,45 @@ and (-webkit-min-device-pixel-ratio: 1) {
     }
 
     .grid-section-explain {
-        width: 34em;
         position: relative;
         top: 1em;
         display: grid;
-
+        width: 34em;
         grid-template-columns: 20em;
-        grid-template-rows: 22em;
-        /*gap: 13em;*/
+        grid-template-rows: 30em;
         background-color: white;
         padding: 2em;
+
     }
 
     .ul-explanation {
         width: 32em;
-
         display: grid;
-        gap: 1em;
+
 
     }
 
-    .div-boete-table {
-        position: relative;
-        top: 5em;
-        width: 35em;
-        background-color: white;
-    }
-
-    table {
-        font-family: AvenirRoman;
-        border-collapse: collapse;
-        /*width: 100%;*/
-        background-color: white;
-    }
-
-    td, th {
-        border: 0.2em solid black;
-        text-align: left;
-        padding: 8px;
-    }
-
-    th {
-        background-color: #e78c70;
-    }
-
-
+    /*boete table overzicht*/
+    /*.div-boete-table {*/
+    /*    position: relative;*/
+    /*    top: 5em;*/
+    /*    width: 35em;*/
+    /*    background-color: white;*/
+    /*}*/
+    /*table {*/
+    /*    font-family: AvenirRoman;*/
+    /*    border-collapse: collapse;*/
+    /*    !*width: 100%;*!*/
+    /*    background-color: white;*/
+    /*}*/
+    /*td, th {*/
+    /*    border: 0.2em solid black;*/
+    /*    text-align: left;*/
+    /*    padding: 8px;*/
+    /*}*/
+    /*th {*/
+    /*    background-color: #e78c70;*/
+    /*}*/
     .searchbookbox {
         position: relative;
         top: 5em;
@@ -825,7 +1013,6 @@ and (-webkit-min-device-pixel-ratio: 1) {
     }
 
     .filter-function {
-        /*left: 0em;*/
         position: relative;
         top: 5em;
         width: 10em;
@@ -834,10 +1021,44 @@ and (-webkit-min-device-pixel-ratio: 1) {
 
     }
 
+    /*inklapare button met filter uncties*/
+    .collaps-open-funtion {
+        padding: 0 18px;
+        display: none;
+        overflow: hidden;
+        background-color: #f1f1f1;
+    }
+
+    .collapsible {
+        background-color: #777;
+        color: white;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+    }
+
+    .active, .collapsible {
+        background-color: #555;
+    }
+
+    .showresults {
+        display: none;
+    }
+
+    .start-book-items {
+        position: relative;
+        top: 7em;
+        /*left: 10em;*/
+    }
+
     .gridbooks {
         top: 8em;
         display: grid;
-        grid-template-rows: 19em 19em 18em 19em 19em;
+        grid-template-rows: 19em 19em;
         grid-template-columns: 14em 14em 14em;
         position: relative;
         gap: 2em;
@@ -910,8 +1131,67 @@ and (-webkit-min-device-pixel-ratio: 1) {
         justify-content: center;
         /*background-color: #242526;*/
     }
+
+    .start-dvd-items {
+        position: relative;
+        top: 15em;
+    }
+
+    .dvd-items {
+        top: 15em;
+        display: grid;
+        grid-template-rows: 19em 19em;
+        grid-template-columns: 14em 14em 14em;
+        position: relative;
+        gap: 2em;
+        /*background-color: red;*/
+    }
+
+    .firstdvd {
+        display: grid;
+        grid-row: 1;
+        grid-column: 1;
+        background-color: white;
+        /*    positionneren*/
+
+
+    }
+
+    .seconddvd {
+        display: grid;
+        grid-row: 1;
+        grid-column: 2;
+        background-color: white;
+
+    }
+
+    .thirddvd {
+        display: grid;
+        grid-row: 1;
+        grid-column: 3;
+        background-color: white;
+    }
+
+    .fourthdvd {
+        display: grid;
+        grid-row: 2;
+        grid-column: 1;
+        background-color: white;
+    }
+
+    .fivedvd {
+        display: grid;
+        grid-row: 2;
+        grid-column: 2;
+        background-color: white;
+    }
+
+    .dvd-title {
+        display: block;
+        position: relative;
+        /*right: 0em;*/
+        text-align: center;
+        width: 15em;
+    }
+
 }
-
-
-
-

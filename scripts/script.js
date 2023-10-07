@@ -24,9 +24,48 @@ modeSwitch.addEventListener("click", () => {
 
     }
 });
-// datatable voor boete dit werkt blijkbaar niet
 
+// inklapbare button
+let coll = document.querySelectorAll(".collapsible");
+//https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_collapsible
+//aanpassing 1ste line je moet alle met .collapsible selecteren
 
+for (let i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        let content = this.nextElementSibling;
+        if (content.style.display === "block") {
+            content.style.display = "none";
+        } else {
+            content.style.display = "block";
+        }
+    });
+}
+
+// verbegen zoekresulaten
+function showdivresults() {
+
+    let divresults = document.querySelector(".showresults");
+    // seleteer de .showresylts div
+
+    let displaydivresults = window.getComputedStyle(divresults).display;
+//     https://developer.mozilla.org/en-US/docs/Web/API/Window/getComputedStyle
+//     https://www.w3schools.com/jsref/jsref_getcomputedstyle.asp
+    //met deze code word alle css proporties of een element en de inhoud ervan weergegeven
+
+//
+    if (displaydivresults === "none") {
+        divresults.style.display = "block";
+        //     laat re
+    } else {
+        divresults.style.display = "none";
+    }
+}
+
+function boeken() {
+    alert("ga naar de pagina uitleningen en verlengen om te zien welke boeken gaan verlopen");
+    // https://www.w3schools.com/jsref/met_win_alert.asp
+}
 
 //mijn code
 // zoekfunctie op naam werkt niet geheel w3schools als je wat intypt krijg je resultaat bij de lijst onderaan
