@@ -6,13 +6,13 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
     <!-- Link to CSS -->
-    <link href="../styles/styles.css" rel="stylesheet">
+    <link href="familypagina.css" rel="stylesheet">
 
     <!-- Link to boxicons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
     <!-- Link to JavaScript script -->
-    <script defer src="../scripts/script.js"></script>
+    <script defer src="../../scripts/script.js"></script>
     <title>inlog-uitlog-opagina</title>
 </head>
 <body>
@@ -20,7 +20,7 @@
     <header>
         <div class="image-text">
             <div class="image">
-                <a href="../index.html"> <img alt="Gebruiker-foto" src="../image/AmberFoto.jpeg"></a>
+                <a href="../../index.html"> <img alt="Gebruiker-foto" src="../../image/AmberFoto.jpeg"></a>
             </div>
 
             <div class="text logo-text">
@@ -38,7 +38,8 @@
                 <li class="search-box">
                     <i class='bx bx-search icon'></i>
                     <label>
-                        <input id="myInput" onkeyup="myFunction()" placeholder="Zoek..." type="search">
+                        <input placeholder="Zoek..." type="search">
+                        <!--                        <button type="submit"></button>-->
                     </label>
                 </li>
             </ul>
@@ -46,58 +47,64 @@
 
             <ul class="menu-links">
                 <li class="nav-link">
-                    <a href="welkompagina.html">
+                    <a href="../../overige-pagina's/welkompagina.html">
                         <i class='bx bx-home icon'></i>
                         <span class="text nav-text">Welkom</span>
                     </a>
                 </li>
 
                 <li class="nav-link">
-                    <a href="leeslijst.html">
+                    <a href="../../overige-pagina's/leeslijst.html">
                         <i class='bx bx-list-ul icon'></i>
                         <span class="text nav-text">Leeslijst</span>
                     </a>
                 </li>
 
                 <li class="nav-link">
-                    <a href="../uitlenen-verlenge/uitleningen-verlengen.html">
+                    <a href="https://wingsvn.github.io/the-client-website/uitleningen.html">
                         <i class='bx bx-bar-chart-alt-2 icon'></i>
                         <span class="text-long nav-text">Uitleningen en verlengen</span>
                     </a>
                 </li>
 
                 <li class="nav-link">
-                    <a href="uitleengeschiedenis.html">
+                    <a href="https://annevd.github.io/the-client-website/uitleengeschiedenis.html">
                         <i class='bx bx-bell icon'></i>
                         <span class="text nav-text">Uitleengeschiedenis</span>
                     </a>
                 </li>
 
                 <li class="nav-link">
-                    <a href="betaalgeschiedenis.html">
+                    <a href="../../overige-pagina's/betaalgeschiedenis.html">
                         <i class='bx bx-pie-chart-alt icon'></i>
                         <span class="text nav-text">Betaalgeschiedenis</span>
                     </a>
                 </li>
 
                 <li class="nav-link">
-                    <a href="reserveringen.html">
+                    <a href="../../overige-pagina's/reserveringen.html">
                         <i class='bx bx-heart icon'></i>
                         <span class="text nav-text">Reserveringen</span>
                     </a>
                 </li>
 
                 <li class="nav-link">
-                    <a href="desposito.html">
+                    <a href="../../overige-pagina's/desposito.html">
                         <i class='bx bx-wallet icon'></i>
                         <span class="text nav-text">Desposito's</span>
                     </a>
                 </li>
 
                 <li class="nav-link">
-                    <a href="tellerstand.html">
+                    <a href="../../overige-pagina's/tellerstand.html">
                         <i class='bx bx-wallet icon'></i>
                         <span class="text nav-text">Tellerstand abonnement</span>
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a href="https://lisagjh.github.io/the-client-website/#">
+                        <i class='bx bx-wallet icon'></i>
+                        <span class="text nav-text">beschikbare-diensten</span>
                     </a>
                 </li>
             </ul>
@@ -106,7 +113,7 @@
         <div class="bottom-content">
             <ul>
                 <li class="">
-                    <a href="inlog-uitlog-pagina.html">
+                    <a href="../../overige-pagina's/familypagina/familypagina.html">
                         <i class='bx bx-log-out icon'></i>
                         <span class="text nav-text">Uitloggen</span>
                     </a>
@@ -131,23 +138,27 @@
 
 </nav>
 <section class="home">
-    <div class="text"><img alt="" src="../image/oba_20.png"></div>
+    <div class="text"><img alt="" src="../../image/oba_20.png"></div>
     <h1>welkom in het family overzichpagina</h1>
-    <div>
-        <img alt="uw profielfoto" height="300px" src="../image/user1.jpg" width="300px">
-        <h3>jan</h3>
-    </div>
-    <div>
-        <img alt="uw profielfoto" height="300px" src="../image/user2.jpg" width="300px">
-        <h3>piet</h3>
-    </div>
-    <div>
-        <img alt="uw profielfoto" src="../image/user3.png">
-        <h3>ellis</h3>
-    </div>
-    <div>
-        <img alt="uw profielfoto" height="300px" src="../image/user4.jpg" width="300px">
-        <h3>marlieke</h3>
+    <div class="grid-container">
+        <div>
+            <a href="../../index.html"><img alt="uw profielfoto" class="profilepicutre1" height="300px"
+                                            src="../../image/user1.jpg" width="300px"></a>
+            <h3>ouder1</h3>
+        </div>
+        <div>
+            <img alt="uw profielfoto" height="300px" src="../../image/user2.jpg" width="300px">
+            <h3>kind1</h3>
+        </div>
+        <div>
+            <img alt="uw profielfoto" src="../../image/user3.png">
+            <h3>kind3</h3>
+        </div>
+        <div>
+            <img alt="uw profielfoto" height="300px" src="../../image/user4.jpg" width="300px">
+            <h3>ouder2</h3>
+        </div>
+
     </div>
 
 
