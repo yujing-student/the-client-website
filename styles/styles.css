@@ -375,6 +375,28 @@ body.dark .home .text {
     /*    hi1 title is een andere html file deposito en niet index*/
 }
 
+/*ditstaat op de boete index*/
+.div-boete-table {
+    position: relative;
+    top: 5em;
+    width: 20em;
+    background-color: white;
+    font-size: 5em;
+
+}
+
+th {
+    background-color: red;
+    border: 1px solid #dddddd;
+
+}
+
+td {
+    background-color: #9adc36;
+    border: 1px solid #dddddd;
+
+}
+
 
 /*code index html file en op het scherm mobiel*/
 /*@media (min-device-width: 1px)  and (max-device-width: 768px) {*/
@@ -457,13 +479,6 @@ body.dark .home .text {
     background-color: white;
     /*border-style: solid;*/
 }
-
-/*.div-boete-table {*/
-/*    position: relative;*/
-/*    top: 5em;*/
-/*    width: 23em;*/
-/*    background-color: white;*/
-/*}*/
 
 
 .searchbookbox {
