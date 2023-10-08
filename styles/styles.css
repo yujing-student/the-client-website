@@ -510,7 +510,7 @@ th {
     position: relative;
     top: 5em;
     width: 10em;
-    display: flex;
+    display: grid;
     background-color: white;
     /*border-style: solid;*/
 }
@@ -545,7 +545,9 @@ th {
 
 .start-book-items {
     position: relative;
-    top: 5em;
+    top: 3.5em;
+    font-size: 1.5em;
+    font-weight: bold;
 }
 
 /*vanaf hier beginnen de boeken*/
@@ -629,7 +631,10 @@ th {
 
 .start-dvd-items {
     position: relative;
-    top: 15em;
+    top: 9em;
+    font-size: 1.5em;
+    font-weight: bold;
+    width: 10em;
 }
 
 .dvd-items {
@@ -751,7 +756,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
         left: 35em;
         position: relative;
         width: 10em;
-        display: flex;
+        display: grid;
         background-color: white;
     }
 
@@ -786,12 +791,14 @@ and (-webkit-min-device-pixel-ratio: 1) {
 
     .start-book-items {
         position: relative;
-        top: -3em;
+        top: 0em;
+        font-weight: bold;
+        font-size: 1.5em;
         /*left: 10em;*/
     }
 
     .gridbooks {
-        top: -2em;
+        top: 2em;
         display: grid;
         grid-template-rows: 19em 19em 18em;
         grid-template-columns: 14em 15em;
@@ -870,7 +877,9 @@ and (-webkit-min-device-pixel-ratio: 1) {
 
     .start-dvd-items {
         position: relative;
-        top: 15em;
+        top: 9em;
+        font-size: 1.5em;
+        font-weight: bold;
     }
 
     .dvd-items {
@@ -970,7 +979,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
         position: relative;
         top: 5em;
         width: 10em;
-        display: flex;
+        display: grid;
         background-color: white;
 
     }
@@ -1005,7 +1014,9 @@ and (-webkit-min-device-pixel-ratio: 1) {
 
     .start-book-items {
         position: relative;
-        top: 7em;
+        top: 4em;
+        font-weight: bold;
+        font-size: 1.5em;
         /*left: 10em;*/
     }
 
@@ -1088,7 +1099,9 @@ and (-webkit-min-device-pixel-ratio: 1) {
 
     .start-dvd-items {
         position: relative;
-        top: 15em;
+        top: 9em;
+        font-size: 1.5em;
+        font-weight: bold;
     }
 
     .dvd-items {
