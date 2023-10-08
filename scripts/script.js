@@ -25,15 +25,13 @@ modeSwitch.addEventListener("click", () => {
     }
 });
 
-// inklapbare button
+
 let coll = document.querySelectorAll(".collapsible");
-//https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_collapsible
-//aanpassing 1ste line je moet alle met .collapsible selecteren
 
 for (let i = 0; i < coll.length; i++) {
     coll[i].addEventListener("click", function () {
         this.classList.toggle("active");
-        let content = this.nextElementSibling;
+        let content = document.querySelector(".collaps-open-funtion");
         if (content.style.display === "block") {
             content.style.display = "none";
         } else {
@@ -41,6 +39,21 @@ for (let i = 0; i < coll.length; i++) {
         }
     });
 }
+
+let dvd = document.querySelectorAll(".collapsible-first");
+
+for (let i = 0; i < dvd.length; i++) {
+    dvd[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        let content = document.querySelector(".collaps-open-funtion-first");
+        if (content.style.display === "block") {
+            content.style.display = "none";
+        } else {
+            content.style.display = "block";
+        }
+    });
+}
+
 
 // verbegen zoekresulaten
 function showdivresults() {

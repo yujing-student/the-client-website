@@ -478,7 +478,7 @@ th {
 
 /*todo dit moet nog inklapbaar worden*/
 /*https://www.w3schools.com/howto/howto_js_collapsible.asp zoeist misschien*/
-.filter-function {
+.filter-function-books {
     position: relative;
     top: 5em;
     width: 10em;
@@ -656,7 +656,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
     /*    background-color: white;*/
     /*    width: 25em;*/
     /*}*/
-    .filter-function {
+    .filter-function-books {
         top: 6.4em;
         left: 35em;
 
@@ -824,7 +824,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
         width: 23em;
     }
 
-    .filter-function {
+    .filter-function-books {
         /*left: 0em;*/
         position: relative;
         top: 5em;

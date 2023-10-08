@@ -11,7 +11,7 @@
 
 @font-face {
     font-family: AvenirBlack;
-    /*src: url(../font/Avenir\ -black.ttf);*/
+    src: url(../font/Avenir-black.ttf);
 }
 
 /* Custom properties */
@@ -406,6 +406,7 @@ body.dark .home .text {
     grid-column: 1/2;
     grid-row: 3;
     line-height: 1.55em;
+    font-family: AvenirRoman;
 
 }
 
@@ -420,8 +421,20 @@ body.dark .home .text {
     gap: 2em;
     background-color: white;
     padding: 2em;
+    font-family: AvenirRoman;
 
     /*border-style: solid;*/
+}
+
+.paragraph-ul, .searchbook-text {
+    /*font-size: 1.3em;*/
+    line-height: 1.55em;
+}
+
+.searchbook-text {
+    font-weight: bold;
+    font-family: AvenirMedium;
+
 }
 
 .ul-explanation {
@@ -475,20 +488,37 @@ body.dark .home .text {
 .button-search {
     border: none;
     background-color: var(--primary-color);
-    color: var(--primary-color-light);
+    /*color: var(--primary-color-light);*/
     font-size: 0.8rem;
-    font-family: AvenirRoman;
+    font-family: AvenirBlack;
     border-radius: 6px;
     padding: 0.5rem;
     margin-left: 0.2em;
+
+}
+
+.book-text-link {
+    color: black;
+    font-size: 1.2em;
+    font-family: AvenirBlack;
 }
 
 /*todo dit moet nog inklapbaar worden*/
 /*https://www.w3schools.com/howto/howto_js_collapsible.asp zoeist misschien*/
-.filter-function {
+.filter-function-books {
     position: relative;
     top: 5em;
     width: 10em;
+    display: grid;
+    background-color: white;
+    /*border-style: solid;*/
+}
+
+.filter-function-dvd {
+    position: relative;
+    top: -0.5em;
+    width: 10em;
+    left: 12em;
     display: grid;
     background-color: white;
     /*border-style: solid;*/
@@ -514,7 +544,30 @@ body.dark .home .text {
     font-size: 15px;
 }
 
-.active, .collapsible {
+.active, .collapsibles {
+    background-color: #555;
+}
+
+.collaps-open-funtion-first {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+}
+
+.collapsible-first {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+
+.active, .collapsible-first {
     background-color: #555;
 }
 
@@ -527,6 +580,7 @@ body.dark .home .text {
     top: 3.5em;
     font-size: 1.5em;
     font-weight: bold;
+    font-family: AvenirMedium;
 }
 
 /*vanaf hier beginnen de boeken*/
@@ -613,6 +667,7 @@ body.dark .home .text {
     top: 9em;
     font-size: 1.5em;
     font-weight: bold;
+    font-family: AvenirMedium;
     width: 10em;
 }
 
@@ -627,6 +682,16 @@ body.dark .home .text {
 }
 
 .activity-itmens {
+    top: -8em;
+    position: relative;
+}
+
+.start-acitity {
+    top: 14em;
+    position: relative;
+    font-family: AvenirBlack;
+    font-size: 2em;
+
 }
 
 .list-activity {
@@ -637,7 +702,7 @@ body.dark .home .text {
 
 .hide-li-sign {
     list-style-type: none;
-    font-weight: bold;
+    /*font-weight: bold;*/
     font-size: 20px;
 }
 
@@ -700,6 +765,15 @@ and (-webkit-min-device-pixel-ratio: 1) {
 
     }
 
+    .paragraph-ul, .searchbook-text {
+        /*font-size: 1.3em;*/
+        line-height: 1.55em;
+    }
+
+    .searchbook-text {
+        font-weight: bold;
+    }
+
 
     .grid-section-explain {
         position: relative;
@@ -711,6 +785,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
         gap: 2em;
         background-color: white;
         padding: 2em;
+        font-family: AvenirRoman;
 
     }
 
@@ -725,20 +800,36 @@ and (-webkit-min-device-pixel-ratio: 1) {
 
     .searchbox-mutlitple {
         position: relative;
-        top: 4em;
+        top: 6em;
     }
 
     #myInput {
         font-size: 1.2em;
     }
 
-    .filter-function {
+    .book-text-link {
+        color: black;
+        font-size: 1.2em;
+        font-family: AvenirBlack;
+    }
+
+    .filter-function-books {
         top: 6.4em;
         left: 35em;
         position: relative;
         width: 10em;
         display: grid;
         background-color: white;
+    }
+
+    .filter-function-dvd {
+        position: relative;
+        top: 8.5em;
+        width: 10em;
+        left: 35em;
+        display: grid;
+        background-color: white;
+        /*border-style: solid;*/
     }
 
     /*inklapare button met filter uncties*/
@@ -761,7 +852,30 @@ and (-webkit-min-device-pixel-ratio: 1) {
         font-size: 15px;
     }
 
-    .active, .collapsible {
+    .active, .collapsibles {
+        background-color: #555;
+    }
+
+    .collaps-open-funtion-first {
+        padding: 0 18px;
+        display: none;
+        overflow: hidden;
+        background-color: #f1f1f1;
+    }
+
+    .collapsible-first {
+        background-color: #777;
+        color: white;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+    }
+
+    .active, .collapsible-first {
         background-color: #555;
     }
 
@@ -908,8 +1022,20 @@ and (-webkit-min-device-pixel-ratio: 1) {
         grid-template-rows: 22em;
         background-color: white;
         padding: 2em;
+        font-family: AvenirRoman;
 
     }
+
+    .paragraph-ul, .searchbook-text {
+        font-size: 1em;
+        line-height: 1.55em;
+    }
+
+    .searchbook-text {
+        /*font-weight: bold;*/
+        font-family: AvenirMedium;
+    }
+
 
     .ul-explanation {
         width: 32em;
@@ -918,27 +1044,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
 
     }
 
-    /*boete table overzicht*/
-    /*.div-boete-table {*/
-    /*    position: relative;*/
-    /*    top: 5em;*/
-    /*    width: 35em;*/
-    /*    background-color: white;*/
-    /*}*/
-    /*table {*/
-    /*    font-family: AvenirRoman;*/
-    /*    border-collapse: collapse;*/
-    /*    !*width: 100%;*!*/
-    /*    background-color: white;*/
-    /*}*/
-    /*td, th {*/
-    /*    border: 0.2em solid black;*/
-    /*    text-align: left;*/
-    /*    padding: 8px;*/
-    /*}*/
-    /*th {*/
-    /*    background-color: #e78c70;*/
-    /*}*/
+
     .searchbookbox {
         position: relative;
         top: 5em;
@@ -949,16 +1055,31 @@ and (-webkit-min-device-pixel-ratio: 1) {
 
     .searchbox-mutlitple {
         position: relative;
-        top: 2em;
+        top: 4em;
     }
 
     #myInput {
         font-size: 1.2em;
     }
 
-    .filter-function {
+    .book-text-link {
+        color: black;
+        font-size: 1.2em;
+        font-family: AvenirBlack;
+    }
+
+    .filter-function-books {
         position: relative;
-        top: 5em;
+        top: 7em;
+        width: 10em;
+        display: grid;
+        background-color: white;
+
+    }
+
+    .filter-function-dvd {
+        position: relative;
+        top: 1.5em;
         width: 10em;
         display: grid;
         background-color: white;
@@ -985,7 +1106,30 @@ and (-webkit-min-device-pixel-ratio: 1) {
         font-size: 15px;
     }
 
-    .active, .collapsible {
+    .active, .collapsibles {
+        background-color: #555;
+    }
+
+    .collaps-open-funtion-first {
+        padding: 0 18px;
+        display: none;
+        overflow: hidden;
+        background-color: #f1f1f1;
+    }
+
+    .collapsible-first {
+        background-color: #777;
+        color: white;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+    }
+
+    .active, .collapsible-first {
         background-color: #555;
     }
 
@@ -996,7 +1140,8 @@ and (-webkit-min-device-pixel-ratio: 1) {
     .start-book-items {
         position: relative;
         top: 4em;
-        font-weight: bold;
+        /*font-weight: bold;*/
+        font-family: AvenirMedium;
         font-size: 1.5em;
         /*left: 10em;*/
     }
@@ -1083,6 +1228,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
         top: 9em;
         font-size: 1.5em;
         font-weight: bold;
+        font-family: AvenirMedium;
     }
 
     .dvd-items {
