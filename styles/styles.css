@@ -432,27 +432,6 @@ body.dark .home .text {
 }
 
 /*deze code is oud*/
-.div-boete-table {
-    position: relative;
-    top: 15em;
-}
-
-table {
-    font-family: AvenirRoman;
-    border-collapse: collapse;
-    /*width: 100%;*/
-    background-color: white;
-}
-
-td, th {
-    border: 0.2em solid black;
-    text-align: left;
-    padding: 8px;
-}
-
-th {
-    background-color: #e78c70;
-}
 
 /*my ul is een id vanwege de filter functie in javascript*/
 #myUL {
@@ -647,6 +626,49 @@ th {
     /*background-color: red;*/
 }
 
+.activity-itmens {
+}
+
+.list-activity {
+
+    /*background-color: white;*/
+}
+
+
+.hide-li-sign {
+    list-style-type: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.all-content-div-activity {
+    position: relative;
+    top: 25em;
+    display: grid;
+    width: 24em;
+    grid-template-columns: 20em;
+    grid-template-rows: 5em;
+    background-color: white;
+    padding: 2em;
+    border-style: solid;
+    /*gap: 5em;*/
+    /*background-color: red;*/
+}
+
+/*.image-activity {*/
+/*    position: relative;*/
+/*    top: 1em;*/
+/*}*/
+
+/*.time {*/
+/*    position: relative;*/
+/*    top: -2em;*/
+/*}*/
+
+/*.content-text {*/
+/*    position: relative;*/
+/*    top: 5em;*/
+/*}*/
 
 /*vanaf hier begint ipad formaat en weer van boven naar beneden gaan*/
 @media (min-width: 48em)  and (max-width: 64em)
@@ -692,47 +714,6 @@ and (-webkit-min-device-pixel-ratio: 1) {
 
     }
 
-    /*!*code beote tabel*!*/
-    /*.div-boete-table {*/
-    /*    position: relative;*/
-    /*    top: 5em;*/
-    /*    width: 35em;*/
-    /*    background-color: white;*/
-    /*}*/
-    /*table {*/
-    /*    font-family: AvenirRoman;*/
-    /*    border-collapse: collapse;*/
-    /*    !*width: 100%;*!*/
-    /*    background-color: white;*/
-    /*}*/
-    /*td, th {*/
-    /*    border: 0.2em solid black;*/
-    /*    text-align: left;*/
-    /*    padding: 8px;*/
-    /*}*/
-    /*th {*/
-    /*    background-color: #e78c70;*/
-    /*}*/
-    /*.searchbookbox {*/
-    /*    position: relative;*/
-    /*    top: 5em;*/
-    /*    background-color: white;*/
-    /*    height: 5em;*/
-    /*    width: 23em;*/
-    /*}*/
-    /*h2:nth-child(1) {*/
-    /*    background-color: white;*/
-    /*    width: 14em;*/
-    /*    position: relative;*/
-    /*    top: 1em;*/
-    /*    height: 5em;*/
-    /*}*/
-    /*.paragraph-table-info {*/
-    /*    position: relative;*/
-    /*    top: 2em;*/
-    /*    background-color: white;*/
-    /*    width: 25em;*/
-    /*}*/
     .searchbookbox {
         position: relative;
         top: 5em;
