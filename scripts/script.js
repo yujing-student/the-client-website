@@ -54,9 +54,6 @@ for (let i = 0; i < dvd.length; i++) {
     });
 }
 
-function boeken() {
-
-}
 
 // verbegen zoekresulaten
 function showdivresults() {
