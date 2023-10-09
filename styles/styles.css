@@ -10,7 +10,7 @@
 }
 
 @font-face {
-    font-family: AvenirBlack;
+    font-family: var(--font-family);
     src: url(../font/Avenir-black.ttf);
 }
 
@@ -46,6 +46,7 @@
     --tran-03: all 0.3s ease;
     --tran-04: all 0.3s ease;
     --tran-05: all 0.3s ease;
+    --font-family: AvenirBlack;
 }
 
 
@@ -369,31 +370,40 @@ body.dark .home .text {
     color: var(--text-color);
 }
 
+/*hier begin mijn code */
+/*dit is alleemaal mobiel*/
 .h1-title {
-    font-size: 5em;
+    font-size: 3em;
     color: red;
     /*    hi1 title is een andere html file deposito en niet index*/
 }
 
-/*ditstaat op de boete index*/
+/*dit staat op de boete index.html*/
 .div-boete-table {
-    position: relative;
-    top: 5em;
-    width: 20em;
+    position: relative; /*relative dan staat de positie de normale flow */
+    top: 5em; /*hier word de verticale hoogte bepaalt op het document*/
+    width: 21em; /*dit is de grootte van de tabel*/
     background-color: white;
-    font-size: 5em;
+    font-size: 1.8em;
+    font-family: AvenirMedium;
 
 }
 
+/*dit is de naam boek en datum inleveren*/
 th {
     background-color: red;
-    border: 1px solid #dddddd;
+    border: 1px solid #dddddd; /*  hier word een randje meegegeven aan de th  */
+    font-size: 1.5em;
+    font-family: AvenirRoman;
 
 }
 
+/*dit zijn de celblockej*/
 td {
-    background-color: #9adc36;
+    background-color: #d7d6d6;
     border: 1px solid #dddddd;
+    font-size: 1em;
+    font-family: AvenirRoman;
 
 }
 
@@ -403,28 +413,28 @@ td {
 /*dit is het 1ste blok van de witte blokes met tekst*/
 .grid-container-welkom {
     display: grid;
-    width: 23em;
-    /*widht is de breedte van de witte achterrondkleur*/
-    grid-template-columns: 20em;
-    grid-template-rows: 4em 4em 12em;
+    width: 23em; /*widht is de breedte van de witte achterrondkleur*/
+    grid-template-columns: 20em; /*dit is de groote van 1 kolom*/
+    grid-template-rows: 4em 4em 12em; /* dit is de grootte van de 3 rijen */
     background-color: white;
-    padding: 2em;
+    padding: 2em; /* dit geeft een elemt extra ruimte tussen de content en de border*/
 }
 
+/*hier bepaal ik waar de title komt te staan binnen de grid vakjes*/
 .grid-h1-title {
     grid-column: 1;
     grid-row: 1;
     text-transform: capitalize;
 }
 
+/*naam van de persoon*/
 .grid-name {
-    /*naam van de persoon*/
     grid-column: 1;
     grid-row: 2;
 }
 
+/*tekst in het 1ste blok homepgina welkom amber*/
 .grid-content-paragraph {
-    /*tekst in het 1ste blok*/
     grid-column: 1/2;
     grid-row: 3;
     line-height: 1.55em;
@@ -432,7 +442,7 @@ td {
 
 }
 
-/*dit is de li met functies onder andere */
+/*dit is de li met functies onder andere de button*/
 .grid-section-explain {
     position: relative;
     top: 1em;
@@ -448,78 +458,71 @@ td {
     /*border-style: solid;*/
 }
 
+/*dit is de li die zit onder de grid-section-explanation*/
+.ul-explanation {
+    display: grid;
+    width: 20em; /* dit is de breedte van het witte blok*/
+    /*line-height: 1.35em;*/
+}
+
+/*hier word de line height ingesteld op de paragrap onder de lijstjes en de searchbooktext*/
 .paragraph-ul, .searchbook-text {
-    /*font-size: 1.3em;*/
+    /* dit is de tekst aan de zijkant kunt u naar het menu gaan*/
     line-height: 1.55em;
 }
 
-.searchbook-text {
-    font-weight: bold;
-    font-family: AvenirMedium;
-
-}
-
-.ul-explanation {
-    /*dit zijn de li die zit onder de grid-section-explanation*/
-    display: grid;
-    width: 20em;
-    line-height: 1.35em;
-}
-
-/*deze code is oud*/
-
-/*my ul is een id vanwege de filter functie in javascript*/
-#myUL {
-    position: relative;
-    top: 15em;
-    width: 23em;
-    display: grid;
-    grid-template-columns: 20em;
-    grid-template-rows: 5em 5em 5em 5em 5em;
-    background-color: white;
-    /*border-style: solid;*/
-}
-
-
+/*dit is de div*/
 .searchbookbox {
     position: relative;
     top: 5em;
     background-color: white;
-    height: 8.5em;
+    height: 5.5em;
     width: 23em;
 
 }
 
-.searchbox-mutlitple {
-    position: relative;
-    top: 4em;
+/*dit is de tekst van hier kunt u zoeken naar boeken en dvd''s of activiteiten*/
+/*dit staan in de div searchbookbox*/
+.searchbook-text {
+    font-weight: bold;
+    font-family: AvenirRoman;
+
 }
 
+/*dit  is de zoekbar*/
+.searchbox-mutlitple {
+    position: relative;
+    top: 3em;
+}
+
+/*grootte zoekbar*/
 #myInput {
     font-size: 1.2em;
 }
 
-
+/*dit is de opmaak van de button*/
 .button-search {
     border: none;
     background-color: var(--primary-color);
     /*color: var(--primary-color-light);*/
     font-size: 0.8rem;
-    font-family: AvenirBlack;
+    font-family: var(--font-family);
     border-radius: 6px;
     padding: 0.5rem;
     margin-left: 0.2em;
 
 }
 
+/*dit is de link van de button klik hier om te zien welke boeken gaan verlopen*/
 .book-text-link {
     color: black;
     font-size: 1.2em;
-    font-family: AvenirBlack;
+    font-family: AvenirRoman;
 }
 
 /*todo dit moet nog inklapbaar worden*/
 /*https://www.w3schools.com/howto/howto_js_collapsible.asp zoeist misschien*/
+/*dit zijn de grijze filter functies die niet werken*/
 .filter-function-books {
     position: relative;
     top: 5em;
@@ -529,6 +532,7 @@ td {
     /*border-style: solid;*/
 }
 
+/*dit is de 2de filter functie voor de dvd*/
 .filter-function-dvd {
     position: relative;
     top: -0.5em;
@@ -539,7 +543,7 @@ td {
     /*border-style: solid;*/
 }
 
-/*inklapare button met filter uncties*/
+/*inklapare button met filter functies*/
 .collaps-open-funtion {
     padding: 0 18px;
     display: none;
@@ -570,6 +574,7 @@ td {
     background-color: #f1f1f1;
 }
 
+/*dit is de 2de collapse voor dvd*/
 .collapsible-first {
     background-color: #777;
     color: white;
@@ -590,6 +595,7 @@ td {
     display: none;
 }
 
+/*dit is de title reulstaten boeken*/
 .start-book-items {
     position: relative;
     top: 3.5em;
@@ -598,17 +604,18 @@ td {
     font-family: AvenirMedium;
 }
 
-/*vanaf hier beginnen de boeken*/
+/*vanaf hier beginnen de boeken dit is de div met daarin alle boeken*/
 .gridbooks {
     top: 6em;
     display: grid;
     grid-template-rows: 19em 19em 18em 19em;
-    grid-template-columns: 14em 15em;
+    grid-template-columns: 14em;
     position: relative;
     gap: 2em;
 
 }
 
+/*positionren boeken boek*/
 .firstbook {
     display: grid;
     grid-row: 1;
@@ -658,6 +665,7 @@ td {
 
 }
 
+/*positioneren van het boek*/
 .books-image {
     display: block;
     position: relative;
@@ -677,6 +685,7 @@ td {
     /*background-color: #242526;*/
 }
 
+/*dit is de title resultaten dvd*/
 .start-dvd-items {
     position: relative;
     top: 9em;
@@ -686,6 +695,7 @@ td {
     width: 10em;
 }
 
+/*dit is de div dvd met daarin de dvd items */
 .dvd-items {
     top: 15em;
     display: grid;
@@ -694,33 +704,32 @@ td {
     position: relative;
     gap: 2em;
     /*background-color: red;*/
+    /*    de dvd items die zijn hetzelfde als firstbook van de boeken*/
 }
 
+/*dit is de div voor activiteiten*/
 .activity-itmens {
     top: -8em;
     position: relative;
 }
 
+/* hier zijn de resultaten in grote letters dus de h1*/
 .start-acitity {
     top: 14em;
     position: relative;
-    font-family: AvenirBlack;
+    font-family: var(--font-family);
     font-size: 2em;
 
 }
 
-.list-activity {
-
-    /*background-color: white;*/
-}
-
-
+/*verbegergem van de li bolletjes*/
 .hide-li-sign {
     list-style-type: none;
     /*font-weight: bold;*/
     font-size: 20px;
 }
 
+/*dit is de content van de div die in de li zit met daarin de paragrap met content en foto*/
 .all-content-div-activity {
     position: relative;
     top: 25em;
@@ -731,24 +740,24 @@ td {
     background-color: white;
     padding: 2em;
     border-style: solid;
+    font-family: AvenirRoman;
     /*gap: 5em;*/
     /*background-color: red;*/
 }
 
-/*.image-activity {*/
-/*    position: relative;*/
-/*    top: 1em;*/
-/*}*/
+/*kleur van de link bij de zoekresulaten acitvity*/
+.decoration-link-actitiy {
+    color: black;
+}
 
-/*.time {*/
-/*    position: relative;*/
-/*    top: -2em;*/
-/*}*/
+/*dit is de span bekijk details*/
+.details-button {
+    /*background-color: red;*/
+    color: black;
+    font-size: 1.5em;
+    font-family: AvenirRoman;
+}
 
-/*.content-text {*/
-/*    position: relative;*/
-/*    top: 5em;*/
-/*}*/
 
 /*vanaf hier begint ipad formaat en weer van boven naar beneden gaan*/
 @media (min-width: 48em)  and (max-width: 64em)
@@ -773,23 +782,6 @@ and (-webkit-min-device-pixel-ratio: 1) {
         line-height: 1.55em;
     }
 
-    .ul-explanation {
-        width: 32em;
-        display: grid;
-
-
-    }
-
-    .paragraph-ul, .searchbook-text {
-        /*font-size: 1.3em;*/
-        line-height: 1.55em;
-    }
-
-    .searchbook-text {
-        font-weight: bold;
-    }
-
-
     .grid-section-explain {
         position: relative;
         top: 1em;
@@ -804,18 +796,30 @@ and (-webkit-min-device-pixel-ratio: 1) {
 
     }
 
+    .ul-explanation {
+        width: 32em;
+        display: grid;
+
+
+    }
+
+    .searchbook-text {
+        font-weight: bold;
+    }
+
+
     .searchbookbox {
         position: relative;
         top: 5em;
         background-color: white;
-        height: 8.5em;
+        height: 4em;
         width: 35em;
 
     }
 
     .searchbox-mutlitple {
         position: relative;
-        top: 6em;
+        top: 3em;
     }
 
     #myInput {
@@ -825,7 +829,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
     .book-text-link {
         color: black;
         font-size: 1.2em;
-        font-family: AvenirBlack;
+        font-family: var(--font-family);
     }
 
     .filter-function-books {
@@ -1064,7 +1068,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
         position: relative;
         top: 5em;
         background-color: white;
-        height: 6.5em;
+        height: 4.5em;
         width: 34em;
     }
 
@@ -1080,7 +1084,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
     .book-text-link {
         color: black;
         font-size: 1.2em;
-        font-family: AvenirBlack;
+        font-family: var(--font-family);
     }
 
     .filter-function-books {
