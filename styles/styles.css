@@ -716,6 +716,7 @@ td {
 }
 
 /*dit is de div voor activiteiten*/
+/*de activiteiten blokjes kunnen niet naast elkaar dus moet de tekst naast de afbeelding of andersom en moet het breeder*/
 .activity-itmens {
     top: -8em;
     position: relative;
@@ -731,6 +732,7 @@ td {
     font-weight: bold;
 
 }
+
 
 /*verbegergem van de li bolletjes*/
 .hide-li-sign {
