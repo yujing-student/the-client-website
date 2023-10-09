@@ -486,6 +486,7 @@ td {
 .searchbook-text {
     font-weight: bold;
     font-family: AvenirRoman;
+    font-size: 1.2em;
 
 }
 
@@ -602,6 +603,7 @@ td {
     font-size: 1.5em;
     font-weight: bold;
     font-family: AvenirMedium;
+    background-color: white;
 }
 
 /*vanaf hier beginnen de boeken dit is de div met daarin alle boeken*/
@@ -612,6 +614,9 @@ td {
     grid-template-columns: 14em;
     position: relative;
     gap: 2em;
+    /*width: 18em;*/
+    border-style: solid;
+
 
 }
 
@@ -692,7 +697,8 @@ td {
     font-size: 1.5em;
     font-weight: bold;
     font-family: AvenirMedium;
-    width: 10em;
+    /*width: 10em;*/
+    background-color: white;
 }
 
 /*dit is de div dvd met daarin de dvd items */
@@ -703,6 +709,8 @@ td {
     grid-template-columns: 14em 14em 14em;
     position: relative;
     gap: 2em;
+    border-style: solid;
+
     /*background-color: red;*/
     /*    de dvd items die zijn hetzelfde als firstbook van de boeken*/
 }
@@ -717,8 +725,10 @@ td {
 .start-acitity {
     top: 14em;
     position: relative;
-    font-family: var(--font-family);
+    font-family: AvenirRoman;
     font-size: 2em;
+    background-color: white;
+    font-weight: bold;
 
 }
 
@@ -763,11 +773,6 @@ td {
 @media (min-width: 48em)  and (max-width: 64em)
 and (-webkit-min-device-pixel-ratio: 1) {
     .grid-container-welkom {
-        display: grid;
-        grid-template-columns: 20em;
-        background-color: white;
-        padding: 2em;
-
         width: 35em;
         grid-template-rows: 5em 5em 6em;
     }
@@ -805,6 +810,8 @@ and (-webkit-min-device-pixel-ratio: 1) {
 
     .searchbook-text {
         font-weight: bold;
+        font-family: AvenirRoman;
+        font-size: 1.2em;
     }
 
 
@@ -834,7 +841,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
 
     .filter-function-books {
         top: 6.4em;
-        left: 35em;
+        left: 40em;
         position: relative;
         width: 10em;
         display: grid;
@@ -845,7 +852,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
         position: relative;
         top: 8.5em;
         width: 10em;
-        left: 35em;
+        left: 40em;
         display: grid;
         background-color: white;
         /*border-style: solid;*/
@@ -1045,14 +1052,15 @@ and (-webkit-min-device-pixel-ratio: 1) {
 
     }
 
-    .paragraph-ul, .searchbook-text {
+    .paragraph-ul {
         font-size: 1em;
         line-height: 1.55em;
     }
 
     .searchbook-text {
-        /*font-weight: bold;*/
-        font-family: AvenirMedium;
+        font-weight: bold;
+        font-family: AvenirRoman;
+        font-size: 1.2em;
     }
 
 
@@ -1115,6 +1123,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
 
     .collapsible {
         background-color: #777;
+        position: relative;
         color: white;
         cursor: pointer;
         padding: 18px;
@@ -1172,6 +1181,9 @@ and (-webkit-min-device-pixel-ratio: 1) {
         grid-template-columns: 14em 14em 14em;
         position: relative;
         gap: 2em;
+        /*breedte van de border*/
+        width: 50em;
+        border-style: solid;
 
     }
 
@@ -1257,8 +1269,8 @@ and (-webkit-min-device-pixel-ratio: 1) {
         grid-template-columns: 14em 14em 14em;
         position: relative;
         gap: 2em;
+        width: 50em;
+        border-style: solid;
         /*background-color: red;*/
     }
-
-
 }

@@ -25,7 +25,7 @@ modeSwitch.addEventListener("click", () => {
     }
 });
 
-
+// hier een onlcik funciton maken
 let coll = document.querySelectorAll(".collapsible");
 
 for (let i = 0; i < coll.length; i++) {
@@ -54,6 +54,9 @@ for (let i = 0; i < dvd.length; i++) {
     });
 }
 
+function boeken() {
+
+}
 
 // verbegen zoekresulaten
 function showdivresults() {
