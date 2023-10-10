@@ -631,7 +631,7 @@ td {
     position: relative;
     gap: 2em;
     /*width: 18em;*/
-    border-style: solid;
+    /*border-style: solid;*/
 
 
 }
@@ -642,6 +642,7 @@ td {
     grid-row: 1;
     grid-column: 1;
     background-color: white;
+    border-style: solid;
     /*    positionneren*/
 
 
@@ -652,6 +653,7 @@ td {
     grid-row: 2;
     grid-column: 1;
     background-color: white;
+    border-style: solid;
 
 }
 
@@ -660,6 +662,8 @@ td {
     grid-row: 3;
     grid-column: 1;
     background-color: white;
+    border-style: solid;
+    border-style: solid;
 }
 
 .fourthbook {
@@ -667,6 +671,7 @@ td {
     grid-row: 4;
     grid-column: 1;
     background-color: white;
+    border-style: solid;
 }
 
 .fivebook {
@@ -674,6 +679,7 @@ td {
     grid-row: 5;
     grid-column: 1;
     background-color: white;
+    border-style: solid;
 }
 
 /*opmaak en positioneren van de tiel content en foto*/
@@ -725,7 +731,7 @@ td {
     grid-template-columns: 14em 14em 14em;
     position: relative;
     gap: 2em;
-    border-style: solid;
+    /*border-style: solid;*/
 
     /*background-color: red;*/
     /*    de dvd items die zijn hetzelfde als firstbook van de boeken*/
@@ -749,12 +755,21 @@ td {
 
 }
 
+/*weergeven van een lijst activiteiten horizontaal*/
+.ul-activity {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
 
 /*verbegergem van de li bolletjes*/
 .hide-li-sign {
+    position: relative;
+    top: 7em;
     list-style-type: none;
     /*font-weight: bold;*/
-    font-size: 20px;
+    font-size: 15px;
+    gap: 1em;
 }
 
 /*dit is de content van de div die in de li zit met daarin de paragrap met content en foto*/
@@ -762,7 +777,7 @@ td {
     position: relative;
     top: 25em;
     display: grid;
-    width: 24em;
+    width: 21em;
     grid-template-columns: 20em;
     grid-template-rows: 5em;
     background-color: white;
@@ -771,6 +786,10 @@ td {
     font-family: AvenirRoman;
     /*gap: 5em;*/
     /*background-color: red;*/
+}
+
+.title-h3-activity {
+    width: 17em;
 }
 
 /*kleur van de link bij de zoekresulaten acitvity*/
@@ -858,8 +877,8 @@ and (-webkit-min-device-pixel-ratio: 1) {
     }
 
     .filter-function-books {
-        top: 6.4em;
-        left: 40em;
+        top: 4.4em;
+        /*left: 40em;*/
         position: relative;
         width: 10em;
         display: grid;
@@ -868,9 +887,9 @@ and (-webkit-min-device-pixel-ratio: 1) {
 
     .filter-function-dvd {
         position: relative;
-        top: 8.5em;
+        top: -0.9em;
         width: 10em;
-        left: 40em;
+        /*left: 40em;*/
         display: grid;
         background-color: white;
         /*border-style: solid;*/
@@ -953,6 +972,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
         grid-row: 1;
         grid-column: 1;
         background-color: white;
+        border-style: solid;
         /*    positionneren*/
 
 
@@ -963,6 +983,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
         grid-row: 1;
         grid-column: 2;
         background-color: white;
+        border-style: solid;
 
     }
 
@@ -978,6 +999,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
         grid-row: 2;
         grid-column: 2;
         background-color: white;
+        border-style: solid;
     }
 
     .fivebook {
@@ -985,12 +1007,14 @@ and (-webkit-min-device-pixel-ratio: 1) {
         grid-row: 3;
         grid-column: 1/2;
         background-color: white;
+        border-style: solid;
     }
 
     .books-image {
         display: block;
         position: relative;
         right: -1em;
+
 
     }
 
@@ -1030,6 +1054,13 @@ and (-webkit-min-device-pixel-ratio: 1) {
         position: relative;
         gap: 2em;
         /*background-color: red;*/
+    }
+
+    .ul-activity {
+        display: grid;
+        /*flex-direction: column;*/
+        grid-template-columns: 21em 21em;
+        gap: 2em;
     }
 
 
@@ -1197,7 +1228,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
         gap: 2em;
         /*breedte van de border*/
         width: 50em;
-        border-style: solid;
+
 
     }
 
@@ -1206,6 +1237,8 @@ and (-webkit-min-device-pixel-ratio: 1) {
         grid-row: 1;
         grid-column: 1;
         background-color: white;
+        border-style: solid;
+
         /*    positionneren*/
 
 
@@ -1216,6 +1249,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
         grid-row: 1;
         grid-column: 2;
         background-color: white;
+        border-style: solid;
 
     }
 
@@ -1224,6 +1258,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
         grid-row: 1;
         grid-column: 3;
         background-color: white;
+        border-style: solid;
     }
 
     .fourthbook {
@@ -1231,6 +1266,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
         grid-row: 2;
         grid-column: 1;
         background-color: white;
+        border-style: solid;
     }
 
     .fivebook {
@@ -1238,6 +1274,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
         grid-row: 2;
         grid-column: 2;
         background-color: white;
+        border-style: solid;
     }
 
     .books-image {
@@ -1284,7 +1321,14 @@ and (-webkit-min-device-pixel-ratio: 1) {
         position: relative;
         gap: 2em;
         width: 50em;
-        border-style: solid;
+        /*border-style: solid;*/
         /*background-color: red;*/
+    }
+
+    .ul-activity {
+        display: grid;
+        /*flex-direction: column;*/
+        grid-template-columns: 21em 21em;
+        gap: 2em;
     }
 }
