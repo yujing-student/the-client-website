@@ -65,7 +65,7 @@ body {
 body.dark {
     --body-color: #18191a;
     --sidebar-color: #242526;
-    --primary-color: #3a3b3c;
+    --primary-color: #ffffff;
     --primary-color-light: #3a3b3c;
     --toggle-color: #fff;
     --text-color: #ccc;
@@ -506,6 +506,7 @@ td {
     border: none;
     background-color: var(--primary-color);
     /*color: var(--primary-color-light);*/
+    text-decoration-color: white;
     font-size: 0.8rem;
     font-family: var(--font-family);
     border-radius: 6px;
@@ -516,7 +517,7 @@ td {
 
 /*dit is de link van de button klik hier om te zien welke boeken gaan verlopen*/
 .book-text-link {
-    color: black;
+    color: white;
     font-size: 1.2em;
     font-family: AvenirRoman;
 }
@@ -830,7 +831,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
     }
 
     .book-text-link {
-        color: black;
+        color: white;
         font-size: 1.2em;
         font-family: var(--font-family);
     }
@@ -890,7 +891,12 @@ and (-webkit-min-device-pixel-ratio: 1) {
         outline: none;
         font-size: 15px;
     }
-
+    .collaps-open-funtion-first {
+        padding: 0 18px;
+        display: none;
+        overflow: hidden;
+        background-color: #f1f1f1;
+    }
     .active, .collapsible-first {
         background-color: #555;
     }
@@ -1073,6 +1079,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
     .searchbox-mutlitple {
         position: relative;
         top: 4em;
+        color: white;
     }
 
     #myInput {
@@ -1080,7 +1087,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
     }
 
     .book-text-link {
-        color: black;
+        color: white;
         font-size: 1.2em;
         font-family: var(--font-family);
     }
