@@ -7,8 +7,6 @@ in deze sprint ga ik de famlilie pagina ontwerpen en realiseren voor de oba
 
   * [user-story](#user-story)
   * [briefing](#briefing)
-  * [feedback](#feedback)
-  * [debriefing](#debriefing)
 
 ## user story
 ik heb gekozen voor [user story](https://github.com/fdnd-agency/oba/issues/21) [Als OBA lid wil ik de zoekresultaten kunnen filteren of sorteren, zodat ik gericht kan zoeken naar interessante boeken](https://github.com/fdnd-agency/oba/issues/21)
