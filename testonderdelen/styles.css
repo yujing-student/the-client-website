@@ -391,9 +391,7 @@ body.dark .home .text {
 
 /*dit is de naam boek en datum inleveren*/
 th {
-    color: #FFFFFF;
-    background-color: #E61C24;
-
+    background-color: red;
     border: 1px solid #dddddd; /*  hier word een randje meegegeven aan de th  */
     font-size: 1.5em;
     font-family: AvenirRoman;
@@ -402,8 +400,8 @@ th {
 
 /*dit zijn de celblockej*/
 td {
-    background-color: #ffffff;
-    border: 0.2em solid #2a2a2a;
+    background-color: #d7d6d6;
+    border: 1px solid #dddddd;
     font-size: 1em;
     font-family: AvenirRoman;
 
@@ -506,26 +504,15 @@ td {
 /*dit is de opmaak van de button*/
 .button-search {
     border: none;
-    color: #FFFFFF;
-    background-color: #E61C24;
-    /*color: #202121;*/
-    /*background-color: #DDFF00;*/
+    background-color: var(--primary-color);
+    /*color: var(--primary-color-light);*/
+    text-decoration-color: white;
     font-size: 0.8rem;
     font-family: var(--font-family);
     border-radius: 6px;
     padding: 0.5rem;
     margin-left: 0.2em;
 
-}
-
-.searchbooks-button {
-    color: #FFFFFF;
-    background-color: #E61C24;
-    font-size: 0.8rem;
-    font-family: var(--font-family);
-    border-radius: 6px;
-    padding: 0.5rem;
-    margin-left: 0.2em;
 }
 
 /*dit is de link van de button klik hier om te zien welke boeken gaan verlopen*/
@@ -844,7 +831,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
     }
 
     .book-text-link {
-        /*color: white;*/
+        color: white;
         font-size: 1.2em;
         font-family: var(--font-family);
     }
@@ -904,14 +891,12 @@ and (-webkit-min-device-pixel-ratio: 1) {
         outline: none;
         font-size: 15px;
     }
-
     .collaps-open-funtion-first {
         padding: 0 18px;
         display: none;
         overflow: hidden;
         background-color: #f1f1f1;
     }
-
     .active, .collapsible-first {
         background-color: #555;
     }
@@ -1102,7 +1087,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
     }
 
     .book-text-link {
-        /*color: white;*/
+        color: white;
         font-size: 1.2em;
         font-family: var(--font-family);
     }
