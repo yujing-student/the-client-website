@@ -559,12 +559,12 @@ td {
 }
 
 /*inklapare button met filter functies*/
-/*.collaps-open-funtion {*/
-/*    padding: 0 18px;*/
-/*    display: none;*/
-/*    overflow: hidden;*/
-/*    background-color: #f1f1f1;*/
-/*}*/
+.collaps-open-funtion {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+}
 
 .collapsible {
     background-color: #777;
@@ -596,9 +596,17 @@ td {
     font-size: 15px;
 }
 
+.collaps-open-funtion-first {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+}
+
 .active, .collapsible-first {
     background-color: #555;
 }
+
 
 .showresults {
     display: none;
@@ -1141,6 +1149,13 @@ and (-webkit-min-device-pixel-ratio: 1) {
 
     .active, .collapsibles {
         background-color: #555;
+    }
+
+    .collaps-open-funtion {
+        padding: 0 18px;
+        display: none;
+        overflow: hidden;
+        background-color: #f1f1f1;
     }
 
 
