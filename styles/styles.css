@@ -804,7 +804,7 @@ td {
 }
 
 .title-h3-activity {
-    width: 17em;
+    width: 15em;
 }
 
 /*kleur van de link bij de zoekresulaten acitvity*/
@@ -1072,7 +1072,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
     }
 
     .title-h3-activity {
-        width: 17em;
+        width: 15em;
     }
 
     .ul-activity {
@@ -1345,7 +1345,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
     }
 
     .title-h3-activity {
-        width: 17em;
+        width: 15em;
     }
 
     .ul-activity {
