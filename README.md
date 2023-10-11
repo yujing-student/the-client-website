@@ -55,9 +55,13 @@ ik heb voor dit project de volgende programmeertalen gebruikt
 <li>html</li>
 <li>css</li>
 <li>javascript</li>
+<br>
 hierbij de linkjes naar de code en je komt op een specifieke regel uit daar begint mijn code
+<br>
 link naar html code: https://github.com/yujing-student/the-client-website/blob/main/index.html#L150
+<br>
 link naar css code: https://github.com/yujing-student/the-client-website/blob/main/styles/styles.css#L392
+<br>
 link naar css code https://github.com/yujing-student/the-client-website/blob/main/scripts/script.js#L29-L82
 
 ## Licentie
