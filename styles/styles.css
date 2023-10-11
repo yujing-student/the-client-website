@@ -495,7 +495,7 @@ body.dark .home .text {
         position: relative;
         top: 5em;
         background-color: white;
-        height: 5.5em;
+        height: 7em;
         width: 23em;
 
     }
@@ -842,7 +842,7 @@ and (-webkit-min-device-pixel-ratio: 1)
     }
 
     .ul-explanation {
-        width: 32em;
+        width: 31em;
 
 
     }
@@ -1108,11 +1108,6 @@ and (-webkit-min-device-pixel-ratio: 1)
 
     }
 
-    .grid-name {
-        grid-column: 1;
-        grid-row: 2;
-    }
-
     .grid-content-paragraph {
         grid-column: 1/4;
         line-height: 1.55em;
@@ -1122,29 +1117,15 @@ and (-webkit-min-device-pixel-ratio: 1)
         width: 34em;
     }
 
-    .paragraph-ul {
-        font-size: 1em;
-        line-height: 1.55em;
-    }
-
-    .searchbook-text {
-        font-weight: bold;
-        font-family: AvenirRoman;
-        font-size: 1.2em;
-    }
-
     .ul-explanation {
-        width: 32em;
+        width: 31em;
         display: grid;
 
 
     }
 
     .searchbookbox {
-        position: relative;
-        top: 5em;
-        background-color: white;
-        height: 4.5em;
+        height: 5.5em;
         width: 34em;
     }
 
@@ -1152,13 +1133,6 @@ and (-webkit-min-device-pixel-ratio: 1)
         position: relative;
         top: 4em;
         color: white;
-    }
-
-
-    .book-text-link {
-        /*color: white;*/
-        font-size: 1.2em;
-        font-family: var(--font-family);
     }
 
     .filter-function-books {
