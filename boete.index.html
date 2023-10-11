@@ -1,52 +1,191 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
-    <title>boete pagina</title>
-    <link href="styles/styles.css" rel="stylesheet" type="text/css">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <!-- Link to CSS -->
+    <link href="styles/styles.css" rel="stylesheet" type="text/css">
+
+    <!-- Link to boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Link to JavaScript script -->
+    <script defer src="./scripts/script.js"></script>
+    <title>boetepagina</title>
 </head>
 <body>
-<div class="div-boete-table">
-    <h2>overzicht boeken in te leveren om boete te voorkomen</h2>
-    <p class="paragraph-table-info">levert u een boek na de in te leveren datum in dan krijgt u een boete</p>
-    <table>
-        <tr>
-            <th>naam boek</th>
-            <th>datum in te leveren</th>
+<nav class="sidebar close">
+    <header>
+        <div class="image-text">
+            <div class="image">
+                <a href="index.html"> <img alt="Gebruiker-foto" src="image/AmberFoto.jpeg"></a>
+            </div>
 
-        </tr>
-        <tr>
-            <td>ajax jaarboek</td>
-            <td>28-12-2023</td>
+            <div class="text logo-text">
+                <p class="name">Amber van de Reijden</p>
+                <p class="profession">5 jaar lid</p>
+            </div>
+        </div>
 
-        </tr>
-        <tr>
-            <td>devils wears prada</td>
-            <td>15-10-2023</td>
+        <i class='bx bx-chevron-right toggle'></i>
+    </header>
 
-        </tr>
-        <tr>
-            <td>psv jaarboek</td>
-            <td>15-12-2023</td>
+    <div class="menu-bar">
+        <div class="menu">
+            <ul class="">
+                <li class="search-box">
+                    <i class='bx bx-search icon'></i>
+                    <label>
+                        <input placeholder="Zoek..." type="search">
+                        <!--                        <button type="submit"></button>-->
+                    </label>
+                </li>
+            </ul>
 
-        </tr>
-        <tr>
-            <td>gijp</td>
-            <td>10-11-2023</td>
 
-        </tr>
-        <tr>
-            <td>nirwana</td>
-            <td>14-2-2023</td>
+            <ul class="menu-links">
+                <li class="nav-link">
+                    <a href="index.html">
+                        <i class='bx bx-home icon'></i>
+                        <span class="text nav-text">Welkom</span>
+                    </a>
+                </li>
 
-        </tr>
-        <tr>
-            <td>afkowobo</td>
-            <td>19-10-2023</td>
+                <li class="nav-link">
+                    <a href="https://pommelienn.github.io/the-client-website/">
+                        <i class='bx bx-user icon'></i>
+                        <span class="text nav-text">Overzicht abonnement</span>
+                    </a>
+                </li>
 
-        </tr>
-    </table>
-</div>
+                <li class="nav-link">
+                    <a href="#">
+                        <i class='bx bx-list-ul icon'></i>
+                        <span class="text nav-text">Leeslijst</span>
+                    </a>
+                </li>
+
+                <li class="nav-link">
+                    <a href="https://wingsvn.github.io/the-client-website/">
+                        <i class='bx bx-bar-chart-alt-2 icon'></i>
+                        <span class="text-long nav-text">Uitleningen en verlengen</span>
+                    </a>
+                </li>
+
+                <li class="nav-link">
+                    <a href="https://annevd.github.io/the-client-website/uitleengeschiedenis.html">
+                        <i class='bx bx-bell icon'></i>
+                        <span class="text nav-text">Uitleengeschiedenis</span>
+                    </a>
+                </li>
+
+                <li class="nav-link">
+                    <a href="https://lisagjh.github.io/the-client-website/">
+                        <i class='bx bx-bookmark icon'></i> <span class="text nav-text">Diensten en Producten</span>
+                    </a>
+                </li>
+
+                <li class="nav-link">
+                    <a href="#">
+                        <i class='bx bx-pie-chart-alt icon'></i>
+                        <span class="text nav-text">Betaalgeschiedenis</span>
+                    </a>
+                </li>
+
+                <li class="nav-link">
+                    <a href="#">
+                        <i class='bx bx-heart icon'></i>
+                        <span class="text nav-text">Reserveringen</span>
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a href="overige-pagina's/desposito.html">
+                        <i class='bx bx-wallet icon'></i>
+                        <span class="text nav-text">Desposito's</span>
+                    </a>
+                </li>
+
+                <li class="nav-link">
+                    <a href="overige-pagina's/tellerstand.html">
+                        <i class='bx bx-wallet icon'></i>
+                        <span class="text nav-text">Tellerstand abonnement</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="bottom-content">
+            <ul>
+                <li class="">
+                    <a href="https://pommelienn.github.io/the-client-website/">
+                        <i class='bx bx-log-out icon'></i>
+                        <span class="text nav-text">Uitloggen</span>
+                    </a>
+                </li>
+
+                <li class="mode">
+                    <div class="sun-moon">
+                        <i class='bx bx-moon icon moon'></i>
+                        <i class='bx bx-sun icon sun'></i>
+                    </div>
+                    <span class="mode-text text">Dark mode</span>
+
+                    <div class="toggle-switch">
+                        <span class="switch"></span>
+                    </div>
+                </li>
+            </ul>
+
+
+        </div>
+    </div>
+
+</nav>
+<section class="home">
+    <div class="text"><img alt="logo" src="image/oba_20.png"></div>
+    <div class="div-boete-table">
+        <h2>overzicht boeken in te leveren om boete te voorkomen</h2>
+        <p class="paragraph-table-info">levert u een boek na de in te leveren datum in dan krijgt u een boete</p>
+        <table>
+            <tr>
+                <th>naam boek</th>
+                <th>datum in te leveren</th>
+
+            </tr>
+            <tr>
+                <td>ajax jaarboek</td>
+                <td>28-12-2023</td>
+
+            </tr>
+            <tr>
+                <td>devils wears prada</td>
+                <td>15-10-2023</td>
+
+            </tr>
+            <tr>
+                <td>psv jaarboek</td>
+                <td>15-12-2023</td>
+
+            </tr>
+            <tr>
+                <td>gijp</td>
+                <td>10-11-2023</td>
+
+            </tr>
+            <tr>
+                <td>nirwana</td>
+                <td>14-2-2023</td>
+
+            </tr>
+            <tr>
+                <td>afkowobo</td>
+                <td>19-10-2023</td>
+
+            </tr>
+        </table>
+    </div>
+</section>
 </body>
 </html>
