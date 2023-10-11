@@ -388,8 +388,7 @@ body.dark .home .text {
 /*hier begin mijn code */
 /*dit is alleemaal mobiel*/
 /*iphone formaakt*/
-@media (min-width: 1em)  and (max-width: 48em)
-{
+
     .h1-title {
         font-size: 3em;
         color: red;
@@ -397,26 +396,16 @@ body.dark .home .text {
     }
 
     /*dit staat op de boete index.html*/
-    /*.div-boete-table {*/
-    /*    position: relative; !*relative dan staat de positie de normale flow *!*/
-    /*    top: 5em; !*hier word de verticale hoogte bepaalt op het document*!*/
-    /*    width: 21em; !*dit is de grootte van de tabel*!*/
-    /*    background-color: white;*/
-    /*    font-size: 3em;*/
-    /*    font-family: AvenirMedium;*/
-    /*    margin-left: auto;*/
-    /*    margin-right: auto;*/
-
-    /*}*/
-    table{
+    .div-boete-table {
         position: relative; /*relative dan staat de positie de normale flow */
         top: 5em; /*hier word de verticale hoogte bepaalt op het document*/
         width: 21em; /*dit is de grootte van de tabel*/
         background-color: white;
-        font-size: 3em;
+        font-size: 1em;
         font-family: AvenirMedium;
         margin-left: auto;
         margin-right: auto;
+
     }
 
     /*dit is de naam boek en datum inleveren*/
@@ -832,7 +821,6 @@ body.dark .home .text {
         font-size: 1.5em;
         font-family: AvenirRoman;
     }
-}
 
 /*vanaf hier begint ipad formaat en weer van boven naar beneden gaan*/
 @media (min-width: 48em)  and (max-width: 65em)
@@ -849,92 +837,17 @@ and (-webkit-min-device-pixel-ratio: 1)
     }
 
 
-    .grid-name {
-        grid-column: 1;
-        grid-row: 2;
-    }
-
-    .grid-content-paragraph {
-        grid-column: 1/2;
-        line-height: 1.55em;
-    }
-
     .grid-section-explain {
-        position: relative;
-        top: 1em;
-        display: grid;
         width: 35em;
-        grid-template-columns: 20em;
-        grid-template-rows: 25em;
-        gap: 2em;
-        background-color: white;
-        padding: 2em;
-        font-family: AvenirRoman;
-
     }
 
     .ul-explanation {
         width: 32em;
-        display: grid;
 
 
     }
 
-    .searchbook-text {
-        font-weight: bold;
-        font-family: AvenirRoman;
-        font-size: 1.2em;
-    }
 
-
-    .searchbookbox {
-        position: relative;
-        top: 5em;
-        background-color: white;
-        height: 4em;
-        width: 35em;
-
-    }
-
-    .searchbox-mutlitple {
-        position: relative;
-        top: 3em;
-    }
-    #myInput {
-        font-size: 1.2em;
-    }
-
-    /*dit is de opmaak van de button*/
-    .button-search {
-        border: none;
-        color: #FFFFFF;
-        background-color: #E61C24;
-        /*color: #202121;*/
-        /*background-color: #DDFF00;*/
-        font-size: 0.8rem;
-        font-family: var(--font-family);
-        border-radius: 6px;
-        padding: 0.5rem;
-        margin-left: 0.2em;
-
-    }
-
-    .searchbooks-button {
-        color: #FFFFFF;
-        background-color: #E61C24;
-        font-size: 0.8rem;
-        font-family: var(--font-family);
-        border-radius: 6px;
-        padding: 0.5rem;
-        margin-left: 0.2em;
-    }
-
-    /*dit is de link van de button klik hier om te zien welke boeken gaan verlopen*/
-    .book-text-link {
-        color: white;
-        font-size: 1.2em;
-        font-family: AvenirRoman;
-    }
     .filter-function-books {
         top: 4.4em;
         /*left: 40em;*/
@@ -953,54 +866,15 @@ and (-webkit-min-device-pixel-ratio: 1)
         background-color: white;
         /*border-style: solid;*/
     }
+    .searchbookbox {
+        position: relative;
+        top: 5em;
+        background-color: white;
+        height: 5.5em;
+        width: 35em;
 
-    /*inklapare button met filter uncties*/
-    .collaps-open-funtion {
-        padding: 0 18px;
-        display: none;
-        overflow: hidden;
-        background-color: #f1f1f1;
     }
 
-    .collapsible {
-        background-color: #777;
-        color: white;
-        cursor: pointer;
-        padding: 18px;
-        width: 100%;
-        border: none;
-        text-align: left;
-        outline: none;
-        font-size: 15px;
-    }
-
-    .active, .collapsibles {
-        background-color: #555;
-    }
-
-
-    .collapsible-first {
-        background-color: #777;
-        color: white;
-        cursor: pointer;
-        padding: 18px;
-        width: 100%;
-        border: none;
-        text-align: left;
-        outline: none;
-        font-size: 15px;
-    }
-
-    .collaps-open-funtion-first {
-        padding: 0 18px;
-        display: none;
-        overflow: hidden;
-        background-color: #f1f1f1;
-    }
-
-    .active, .collapsible-first {
-        background-color: #555;
-    }
 
 
     .showresults {
@@ -1187,7 +1061,7 @@ and (-webkit-min-device-pixel-ratio: 1)
         top: 5em; /*hier word de verticale hoogte bepaalt op het document*/
         width: 21em; /*dit is de grootte van de tabel*/
         background-color: white;
-        font-size: 1.5em;
+        font-size: 1em;
         justify-content: center;
         align-items: center;
         font-family: AvenirMedium;
@@ -1245,19 +1119,7 @@ and (-webkit-min-device-pixel-ratio: 1)
     }
 
     .grid-section-explain {
-
-
-        position: relative;
-        top: 1em;
-        display: grid;
         width: 34em;
-        grid-template-columns: 20em;
-        grid-template-rows: 25em;
-        gap: 2em;
-        background-color: white;
-        padding: 2em;
-        font-family: AvenirRoman;
-
     }
 
     .paragraph-ul {
@@ -1271,14 +1133,12 @@ and (-webkit-min-device-pixel-ratio: 1)
         font-size: 1.2em;
     }
 
-
     .ul-explanation {
         width: 32em;
         display: grid;
 
 
     }
-
 
     .searchbookbox {
         position: relative;
@@ -1294,9 +1154,6 @@ and (-webkit-min-device-pixel-ratio: 1)
         color: white;
     }
 
-    #myInput {
-        font-size: 1.2em;
-    }
 
     .book-text-link {
         /*color: white;*/
@@ -1307,99 +1164,30 @@ and (-webkit-min-device-pixel-ratio: 1)
     .filter-function-books {
         position: relative;
         top: 7em;
-        width: 10em;
-        display: grid;
-        background-color: white;
 
     }
 
     .filter-function-dvd {
         position: relative;
         top: 1.5em;
-        width: 10em;
-        left: 12em;
-        display: grid;
-        background-color: white;
         /*border-style: solid;*/
     }
 
     /*inklapare button met filter uncties*/
-    .collapsible {
-        background-color: #777;
-        position: relative;
-        color: white;
-        cursor: pointer;
-        padding: 18px;
-        width: 100%;
-        border: none;
-        text-align: left;
-        outline: none;
-        font-size: 15px;
-    }
-
-    .active, .collapsibles {
-        background-color: #555;
-    }
-
-    .collaps-open-funtion {
-        padding: 0 18px;
-        display: none;
-        overflow: hidden;
-        background-color: #f1f1f1;
-    }
-
-
-    .collapsible-first {
-        background-color: #777;
-        color: white;
-        cursor: pointer;
-        padding: 18px;
-        width: 100%;
-        border: none;
-        text-align: left;
-        outline: none;
-        font-size: 15px;
-    }
-
-    .active, .collapsible-first {
-        background-color: #555;
-    }
-
-    .showresults {
-        display: none;
-    }
 
     .start-book-items {
         position: relative;
         top: 4em;
-        font-family: AvenirMedium;
-        font-size: 1.5em;
-        font-weight: bold;
-        background-color: white;
         /*left: 10em;*/
     }
 
     .gridbooks {
         top: 8em;
-        display: grid;
+        /*display: grid;*/
         grid-template-rows: 19em 19em;
         grid-template-columns: 14em 14em 14em;
         position: relative;
         gap: 2em;
-        /*breedte van de border*/
-        width: 50em;
-
-
-    }
-
-    .firstbook {
-        display: grid;
-        grid-row: 1;
-        grid-column: 1;
-        background-color: white;
-        border-style: solid;
-
-        /*    positionneren*/
 
 
     }
@@ -1437,68 +1225,6 @@ and (-webkit-min-device-pixel-ratio: 1)
         border-style: solid;
     }
 
-    .books-image {
-        display: block;
-        position: relative;
-        right: -1em;
-
-    }
-
-    .sectiontitle-book {
-        display: block;
-        position: relative;
-        /*right: 0em;*/
-        text-align: center;
-        width: 15em;
-
-    }
-
-    /*content-book-under-name-book dit is voor content maar ga ik niet gebruiken*/
-    .booktitle {
-        display: block;
-        position: relative;
-        width: 6em;
-        left: 1.8em;
-        color: #000000;
-        font-size: 1.5em;
-        justify-content: center;
-        /*background-color: #242526;*/
-    }
-
-    .start-dvd-items {
-        position: relative;
-        top: 9em;
-        font-size: 1.5em;
-        font-weight: bold;
-        font-family: AvenirMedium;
-    }
-
-    .dvd-items {
-        top: 15em;
-        display: grid;
-        grid-template-rows: 19em 19em;
-        grid-template-columns: 14em 14em 14em;
-        position: relative;
-        gap: 2em;
-        width: 50em;
-        /*border-style: solid;*/
-        /*background-color: red;*/
-    }
-    .activity-itmens {
-        top: -8em;
-        position: relative;
-    }
-
-    /* hier zijn de resultaten in grote letters dus de h1*/
-    .start-acitity {
-        top: 14em;
-        position: relative;
-        font-family: AvenirRoman;
-        font-size: 2em;
-        background-color: white;
-        font-weight: bold;
-
-    }
 
     /*weergeven van een lijst activiteiten horizontaal*/
     .ul-activity {
@@ -1508,124 +1234,4 @@ and (-webkit-min-device-pixel-ratio: 1)
         gap: 2em;
     }
 
-
-        /*verbegergem van de li bolletjes*/
-    .hide-li-sign {
-        position: relative;
-        top: 7em;
-        list-style-type: none;
-        /*font-weight: bold;*/
-        font-size: 15px;
-        gap: 1em;
-    }
-
-    /*dit is de content van de div die in de li zit met daarin de paragrap met content en foto*/
-    .all-content-div-activity {
-        position: relative;
-        top: 25em;
-        display: grid;
-        width: 21em;
-        grid-template-columns: 20em;
-        grid-template-rows: 5em;
-        background-color: white;
-        padding: 2em;
-        border-style: solid;
-        font-family: AvenirRoman;
-        /*gap: 5em;*/
-        /*background-color: red;*/
-    }
-    .title-h3-activity {
-        width: 15em;
-    }
-
-    /*kleur van de link bij de zoekresulaten acitvity*/
-    .decoration-link-actitiy {
-        color: black;
-    }
-
-
-    /*dit is de span bekijk details*/
-    .details-button {
-        /*background-color: red;*/
-        color: black;
-        font-size: 1.5em;
-        font-family: AvenirRoman;
-    }
-
-    .div-boete-table {
-        position: relative; /*relative dan staat de positie de normale flow */
-        top: 5em; /*hier word de verticale hoogte bepaalt op het document*/
-        width: 21em; /*dit is de grootte van de tabel*/
-        background-color: white;
-        font-size: 1.2em;
-        justify-content: center;
-        /*left: 5em;*/
-        font-family: AvenirMedium;
-        margin-left: auto;
-        margin-right: auto;
-
-    }
-    /*dit  is de zoekbar*/
-    .searchbox-mutlitple {
-        position: relative;
-        top: 3em;
-    }
-
-    /*grootte zoekbar*/
-    #myInput {
-        font-size: 1.2em;
-    }
-
-    /*dit is de opmaak van de button*/
-    .button-search {
-        border: none;
-        color: #FFFFFF;
-        background-color: #E61C24;
-        /*color: #202121;*/
-        /*background-color: #DDFF00;*/
-        font-size: 0.8rem;
-        font-family: var(--font-family);
-        border-radius: 6px;
-        padding: 0.5rem;
-        margin-left: 0.2em;
-
-    }
-
-    .searchbooks-button {
-        color: #FFFFFF;
-        background-color: #E61C24;
-        font-size: 0.8rem;
-        font-family: var(--font-family);
-        border-radius: 6px;
-        padding: 0.5rem;
-        margin-left: 0.2em;
-    }
-
-    /*dit is de link van de button klik hier om te zien welke boeken gaan verlopen*/
-    .book-text-link {
-        color: white;
-        font-size: 1.2em;
-        font-family: AvenirRoman;
-    }
-
-
-    /*dit is de naam boek en datum inleveren*/
-    th {
-        color: #FFFFFF;
-        background-color: #E61C24;
-
-        border: 1px solid #dddddd; /*  hier word een randje meegegeven aan de th  */
-        font-size: 1.5em;
-        font-family: AvenirRoman;
-
-    }
-
-    /*dit zijn de celblockej*/
-    td {
-        background-color: #ffffff;
-        border: 0.2em solid #2a2a2a;
-        font-size: 1em;
-        font-family: AvenirRoman;
-
-    }
 }
