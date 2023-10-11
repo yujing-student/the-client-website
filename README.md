@@ -1,7 +1,7 @@
 
 
 # sprint2 Mijn OBA - Familieoverzicht abonnementen
-in deze sprint ga ik de famlilie pagina ontwerpen en realiseren voor de oba verder heb ik ook een backlog user story uitgekozen
+in deze sprint ga ik de famlilie pagina ontwerpen en realiseren voor de oba verder heb ik ook een backlog user story uitgekozen we hebben al een format ontvangen van amber die de navbar heeft gemaakt en waar wij verder op moesten werken
 
 ## Inhoudsopgave
 
@@ -49,6 +49,16 @@ https://yujing-student.github.io/the-client-website/boete.index.html
 ## briefing
 briefing naar oba: OBA familie overzichtspagina | squad D die staat in de wiki bij de anlayse fase
 9">
+
+## kenmerken
+ik heb voor dit project de volgende programmeertalen gebruikt
+<li>html</li>
+<li>css</li>
+<li>javascript</li>
+hierbij de linkjes naar de code en je komt op een specifieke regel uit daar begint mijn code
+link naar html code: https://github.com/yujing-student/the-client-website/blob/main/index.html#L150
+link naar css code: https://github.com/yujing-student/the-client-website/blob/main/styles/styles.css#L392
+link naar css code https://github.com/yujing-student/the-client-website/blob/main/scripts/script.js#L29-L82
 
 ## Licentie
 
