@@ -181,7 +181,7 @@ body.dark {
 
 header .image-text .name {
     margin-top: 2px;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 600;
 }
 
@@ -445,7 +445,7 @@ body.dark .home .text {
         display: grid;
         width: 23em; /*widht is de breedte van de witte achterrondkleur*/
         grid-template-columns: 20em; /*dit is de groote van 1 kolom*/
-        grid-template-rows: 4em 4em 12em; /* dit is de grootte van de 3 rijen */
+        grid-template-rows: 4em 4em 9em; /* dit is de grootte van de 3 rijen */
         background-color: white;
         padding: 2em; /* dit geeft een elemt extra ruimte tussen de content en de border*/
     }
@@ -839,11 +839,15 @@ body.dark .home .text {
 and (-webkit-min-device-pixel-ratio: 1)
 {
     .grid-container-welkom {
-        width: 35em;
-        grid-template-rows: 5em 5em 6em;
+        display: grid;
+        width: 35em; /*widht is de breedte van de witte achterrondkleur*/
+        grid-template-columns: 20em; /*dit is de groote van 1 kolom*/
+        grid-template-rows: 4em 4em 9em; /* dit is de grootte van de 3 rijen */
         background-color: white;
-        gap: 2em;
+
+        padding: 2em; /* dit geeft een elemt extra ruimte tussen de content en de border*/
     }
+
 
     .grid-name {
         grid-column: 1;
@@ -861,7 +865,7 @@ and (-webkit-min-device-pixel-ratio: 1)
         display: grid;
         width: 35em;
         grid-template-columns: 20em;
-        grid-template-rows: 22em;
+        grid-template-rows: 25em;
         gap: 2em;
         background-color: white;
         padding: 2em;
@@ -942,9 +946,9 @@ and (-webkit-min-device-pixel-ratio: 1)
 
     .filter-function-dvd {
         position: relative;
-        top: -0.9em;
+        top: -1.12em;
         width: 10em;
-        /*left: 40em;*/
+        left: 12em;
         display: grid;
         background-color: white;
         /*border-style: solid;*/
@@ -1008,6 +1012,7 @@ and (-webkit-min-device-pixel-ratio: 1)
         top: 0em;
         font-weight: bold;
         font-size: 1.5em;
+        background-color: white;
         /*left: 10em;*/
     }
 
@@ -1218,11 +1223,13 @@ and (-webkit-min-device-pixel-ratio: 1)
 @media (min-width: 65em) {
     .grid-container-welkom {
         width: 34em;
-        grid-template-rows: 4em 4em 9em;
+        grid-template-rows: 4em 4em 6em;
         display: grid;
         grid-template-columns: 14em 14em;
         background-color: white;
         padding: 2em;
+
+
 
 
     }
@@ -1238,12 +1245,15 @@ and (-webkit-min-device-pixel-ratio: 1)
     }
 
     .grid-section-explain {
+
+
         position: relative;
         top: 1em;
         display: grid;
         width: 34em;
         grid-template-columns: 20em;
-        grid-template-rows: 22em;
+        grid-template-rows: 25em;
+        gap: 2em;
         background-color: white;
         padding: 2em;
         font-family: AvenirRoman;
@@ -1307,9 +1317,10 @@ and (-webkit-min-device-pixel-ratio: 1)
         position: relative;
         top: 1.5em;
         width: 10em;
+        left: 12em;
         display: grid;
         background-color: white;
-
+        /*border-style: solid;*/
     }
 
     /*inklapare button met filter uncties*/
@@ -1361,9 +1372,10 @@ and (-webkit-min-device-pixel-ratio: 1)
     .start-book-items {
         position: relative;
         top: 4em;
-        /*font-weight: bold;*/
         font-family: AvenirMedium;
         font-size: 1.5em;
+        font-weight: bold;
+        background-color: white;
         /*left: 10em;*/
     }
 
