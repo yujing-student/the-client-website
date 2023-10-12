@@ -47,8 +47,7 @@ https://yujing-student.github.io/the-client-website/boete.index.html
 
 
 ## briefing
-briefing naar oba: OBA familie overzichtspagina | squad D die staat in de wiki bij de anlayse fase
-9">
+briefing naar oba: OBA familie overzichtspagina | squad D die staat in de wiki bij de anlayse fase">
 
 ## kenmerken
 ik heb voor dit project de volgende programmeertalen gebruikt
