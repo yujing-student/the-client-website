@@ -1,17 +1,17 @@
 /* Fonts being used by the oba */
 @font-face {
     font-family: AvenirRoman;
-    src: url(../font/Avenir-roman.ttf);
+    src: url(../font/Avenir-Roman.ttf);
 }
 
 @font-face {
     font-family: AvenirMedium;
-    src: url(../font/Avenir-medium.ttf);
+    src: url(../font/Avenir-Medium.ttf);
 }
 
 @font-face {
     font-family: var(--font-family);
-    src: url(../font/Avenir-black.ttf);
+    src: url(../font/Avenir-Black.ttf);
 }
 
 /* Custom properties */
@@ -46,7 +46,7 @@
     --tran-03: all 0.3s ease;
     --tran-04: all 0.3s ease;
     --tran-05: all 0.3s ease;
-    --font-family: AvenirBlack;
+
 }
 
 
@@ -403,7 +403,8 @@ body.dark .home .text {
     width: 21em; /*dit is de grootte van de tabel*/
     background-color: white;
     font-size: 1em;
-    font-family: AvenirMedium;
+    color: var(--text-color);
+
     margin-left: auto;
     margin-right: auto;
 
@@ -416,7 +417,7 @@ th {
 
     border: 1px solid #dddddd; /*  hier word een randje meegegeven aan de th  */
     font-size: 1.5em;
-    font-family: AvenirRoman;
+
 
 }
 
@@ -425,7 +426,7 @@ td {
     background-color: #ffffff;
     border: 0.2em solid #2a2a2a;
     font-size: 1em;
-    font-family: AvenirRoman;
+
 
 }
 
@@ -436,8 +437,10 @@ td {
     width: 23em; /*widht is de breedte van de witte achterrondkleur*/
     grid-template-columns: 20em; /*dit is de groote van 1 kolom*/
     grid-template-rows: 4em 4em 9em; /* dit is de grootte van de 3 rijen */
-    background-color: white;
+    background-color: var(--body-color);
     padding: 2em; /* dit geeft een elemt extra ruimte tussen de content en de border*/
+    color: var(--text-color);
+
 }
 
 /*hier bepaal ik waar de title komt te staan binnen de grid vakjes*/
@@ -445,12 +448,16 @@ td {
     grid-column: 1;
     grid-row: 1;
     text-transform: capitalize;
+    color: var(--text-color);
+
 }
 
 /*naam van de persoon*/
 .grid-name {
     grid-column: 1;
     grid-row: 2;
+    color: var(--text-color);
+
 }
 
 /*tekst in het 1ste blok homepgina welkom amber*/
@@ -458,7 +465,8 @@ td {
     grid-column: 1/2;
     grid-row: 3;
     line-height: 1.55em;
-    font-family: AvenirRoman;
+    color: var(--text-color);
+
 
 }
 
@@ -471,9 +479,9 @@ td {
     grid-template-columns: 20em;
     grid-template-rows: 25em;
     gap: 2em;
-    background-color: white;
+    /*background-color: white;*/
     padding: 2em;
-    font-family: AvenirRoman;
+
 
     /*border-style: solid;*/
 }
@@ -483,12 +491,14 @@ td {
     display: grid;
     width: 20em; /* dit is de breedte van het witte blok*/
     /*line-height: 1.35em;*/
+    color: var(--text-color);
 }
 
 /*hier word de line height ingesteld op de paragrap onder de lijstjes en de searchbooktext*/
 .paragraph-ul, .searchbook-text {
     /* dit is de tekst aan de zijkant kunt u naar het menu gaan*/
     line-height: 1.55em;
+    color: var(--text-color);
 }
 
 /*dit is de div*/
@@ -505,7 +515,7 @@ td {
 /*dit staan in de div searchbookbox*/
 .searchbook-text {
     font-weight: bold;
-    font-family: AvenirRoman;
+
     font-size: 1.2em;
 
 }
@@ -524,7 +534,7 @@ td {
 /*dit is de opmaak van de button*/
 .button-search {
     border: none;
-    color: #FFFFFF;
+
     background-color: #E61C24;
     /*color: #202121;*/
     /*background-color: #DDFF00;*/
@@ -533,24 +543,25 @@ td {
     border-radius: 6px;
     padding: 0.5rem;
     margin-left: 0.2em;
+    color: var(--text-color);
 
 }
 
 .searchbooks-button {
-    color: #FFFFFF;
     background-color: #E61C24;
     font-size: 0.8rem;
     font-family: var(--font-family);
     border-radius: 6px;
     padding: 0.5rem;
     margin-left: 0.2em;
+    color: white;
+    /*color: var(--text-color);*/
 }
 
 /*dit is de link van de button klik hier om te zien welke boeken gaan verlopen*/
 .book-text-link {
     color: white;
     font-size: 1.2em;
-    font-family: AvenirRoman;
 }
 
 /*todo dit moet nog inklapbaar worden*/
@@ -628,6 +639,7 @@ td {
 
 .showresults {
     display: none;
+    color: var(--text-color);
 }
 
 /*dit is de title reulstaten boeken*/
@@ -636,7 +648,7 @@ td {
     top: 3.5em;
     font-size: 1.5em;
     font-weight: bold;
-    font-family: AvenirMedium;
+
     background-color: white;
 }
 
@@ -736,7 +748,7 @@ td {
     top: 9em;
     font-size: 1.5em;
     font-weight: bold;
-    font-family: AvenirMedium;
+
     /*width: 10em;*/
     background-color: white;
 }
@@ -766,7 +778,7 @@ td {
 .start-acitity {
     top: 14em;
     position: relative;
-    font-family: AvenirRoman;
+
     font-size: 2em;
     background-color: white;
     font-weight: bold;
@@ -801,7 +813,7 @@ td {
     background-color: white;
     padding: 2em;
     border-style: solid;
-    font-family: AvenirRoman;
+
     /*gap: 5em;*/
     /*background-color: red;*/
 }
@@ -820,7 +832,7 @@ td {
     /*background-color: red;*/
     color: black;
     font-size: 1.5em;
-    font-family: AvenirRoman;
+
 }
 
 /*vanaf hier begint ipad formaat en weer van boven naar beneden gaan*/
@@ -999,7 +1011,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
     .start-acitity {
         top: 14em;
         position: relative;
-        font-family: AvenirRoman;
+
         font-size: 2em;
         background-color: white;
         font-weight: bold;
@@ -1035,7 +1047,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
         background-color: white;
         padding: 2em;
         border-style: solid;
-        font-family: AvenirRoman;
+
         /*gap: 5em;*/
         /*background-color: red;*/
     }
@@ -1058,7 +1070,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
         /*background-color: red;*/
         color: black;
         font-size: 1.5em;
-        font-family: AvenirRoman;
+
     }
 
     /*dit staat op de boete index.html*/
@@ -1070,7 +1082,8 @@ and (-webkit-min-device-pixel-ratio: 1) {
         font-size: 1em;
         justify-content: center;
         align-items: center;
-        font-family: AvenirMedium;
+        color: var(--text-color);
+
         margin-left: auto;
         margin-right: auto;
 
@@ -1083,7 +1096,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
 
         border: 1px solid #dddddd; /*  hier word een randje meegegeven aan de th  */
         font-size: 1.5em;
-        font-family: AvenirRoman;
+
 
     }
 
@@ -1092,7 +1105,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
         background-color: #ffffff;
         border: 0.2em solid #2a2a2a;
         font-size: 1em;
-        font-family: AvenirRoman;
+
 
     }
 
