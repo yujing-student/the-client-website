@@ -653,6 +653,8 @@ td {
 }
 
 /*vanaf hier beginnen de boeken dit is de div met daarin alle boeken*/
+/*voor meer informatie over deze code gridbooks
+zie de link: https://github.com/yujing-student/the-client-website/wiki/bewijslast-portflow-1.1.2-Past-aangeboden-principes-en-conventies-op-het-gebied-van-frontend-design-en-development*/
 .gridbooks {
     top: 6em;
     display: grid;
